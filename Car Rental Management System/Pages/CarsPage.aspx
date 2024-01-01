@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CarsPage.aspx.cs" Inherits="Car_Rental_Management_System.Pages.CarsPage" %>
+<%@ Register Src="~/Component/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
 
 
 <!DOCTYPE html>
@@ -8,6 +9,7 @@
     <title></title>
     <link href="../StyleSheets/Navbar.css" rel="stylesheet" />      
     <link href="../StyleSheets/CarsPage.css" rel="stylesheet" />
+    <link href="../Component/Footer.css" rel="stylesheet" />
     <link href="../StyleSheets/Style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
@@ -512,6 +514,7 @@
 </div>
     
 </form>
+    <uc1:Footer runat="server" ID="Footer" />
  <script>
 
      document.addEventListener("DOMContentLoaded", function () {

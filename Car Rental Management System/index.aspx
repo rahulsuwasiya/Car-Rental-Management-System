@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Car_Rental_Management_System.index" %>
+<%@ Register Src="~/Component/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
 
 
 <!DOCTYPE html>
@@ -8,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="StyleSheet/HomePage.css" />
     <title></title>
     <link href="StyleSheets/Navbar.css" rel="stylesheet" />
+    <link href="Component/Footer.css" rel="stylesheet" />
     <link href="StyleSheets/Style.css" rel="stylesheet" />
     <link href="StyleSheets/HomePage.css" rel="stylesheet" />
     <link href="StyleSheets/MilestonePage.css" rel="stylesheet" />
@@ -88,9 +90,7 @@
     </form>
 </div> 
    
-
-    
-<p class="copyright">&copy;2023 | Had Code - All Right Reserved</p>
+<uc1:Footer runat="server" id="Footer" />
      <script>
 
          const menuButton = document.querySelector(".menu-toggle");

@@ -1,4 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TestimonialsPage.aspx.cs" Inherits="Car_Rental_Management_System.Pages.TestimonialPage" %>
+<%@ Register Src="~/Component/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+
 
 
 
@@ -8,6 +10,7 @@
 <head runat="server">
     <title></title>
     <link href="../StyleSheets/Navbar.css" rel="stylesheet" />
+    <link href="../Component/Footer.css" rel="stylesheet" />
     <link href="../StyleSheets/Style.css" rel="stylesheet" />
     <link href="../StyleSheets/TestimonialPage.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -240,6 +243,7 @@
             <div class="swiper-pagination"> </div>
         </div>
     </div>
+    <uc1:Footer runat="server" ID="Footer" />
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,

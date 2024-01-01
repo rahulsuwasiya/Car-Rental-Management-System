@@ -11,7 +11,7 @@
   height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: centers;
+  justify-content: center;
 }
 .update-page .container .box .image-box {
   width: 400px;

@@ -67,6 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Component\Footer.ascx" />
+    <Content Include="Component\Footer.css">
+      <DependentUpon>Footer.scss</DependentUpon>
+    </Content>
+    <Content Include="Component\Footer.min.css">
+      <DependentUpon>Footer.css</DependentUpon>
+    </Content>
     <Content Include="Images\App_Store.png" />
     <Content Include="Images\CartoonCar.png" />
     <Content Include="Images\MainCar.png" />
@@ -112,6 +119,9 @@
     <Content Include="StyleSheets\Style.css">
       <DependentUpon>Style.scss</DependentUpon>
     </Content>
+    <Content Include="StyleSheets\Style.min.css">
+      <DependentUpon>Style.css</DependentUpon>
+    </Content>
     <Content Include="StyleSheets\SuggestPage.css">
       <DependentUpon>SuggestPage.scss</DependentUpon>
     </Content>
@@ -121,9 +131,19 @@
     <Content Include="StyleSheets\UpdatePage.css">
       <DependentUpon>UpdatePage.scss</DependentUpon>
     </Content>
+    <Content Include="StyleSheets\UpdatePage.min.css">
+      <DependentUpon>UpdatePage.css</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Component\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Component\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -208,6 +228,7 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="Component\Footer.scss" />
     <None Include="packages.config" />
     <Content Include="StyleSheets\Navbar.scss" />
     <Content Include="StyleSheets\CarsPage.scss" />

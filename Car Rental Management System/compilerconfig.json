@@ -49,5 +49,9 @@
   {
     "outputFile": "StyleSheets/UpdatePage.css",
     "inputFile": "StyleSheets/UpdatePage.scss"
+  },
+  {
+    "outputFile": "Component/Footer.css",
+    "inputFile": "Component/Footer.scss"
   }
 ]

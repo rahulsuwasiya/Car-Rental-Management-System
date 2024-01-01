@@ -1,11 +1,13 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UpdatePage.aspx.cs" Inherits="Car_Rental_Management_System.Pages.UpdatePage" %>
+<%@ Register Src="~/Component/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
     <link href="../StyleSheets/Navbar.css" rel="stylesheet" />
+    <link href="../Component/Footer.css" rel="stylesheet" />
     <link href="../StyleSheets/UpdatePage.css" rel="stylesheet" />
     <link href="../StyleSheets/Style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -67,6 +69,7 @@
  </div>
 
  </form>
+    <uc1:Footer runat="server" ID="Footer" />
      <script>
 
  const menuButton = document.querySelector(".menu-toggle");

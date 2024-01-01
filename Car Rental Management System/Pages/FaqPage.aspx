@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FaqPage.aspx.cs" Inherits="Car_Rental_Management_System.Pages.FaqPage" %>
-
+<%@ Register Src="~/Component/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
 
 <!DOCTYPE html>
 
@@ -7,6 +7,7 @@
 <head runat="server">
     <title></title>
     <link href="../StyleSheets/Navbar.css" rel="stylesheet" />
+    <link href="../Component/Footer.css" rel="stylesheet" />
     <link href="../StyleSheets/Style.css" rel="stylesheet" />
     <link href="../StyleSheets/FaqPage.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -81,6 +82,7 @@
          </div>
      </div>
  </div>
+    <uc1:Footer runat="server" ID="Footer" />
      <script>
 
  const menuButton = document.querySelector(".menu-toggle");

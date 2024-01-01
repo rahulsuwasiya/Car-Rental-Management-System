@@ -13,5 +13,14 @@ namespace Car_Rental_Management_System.Pages
 
     public partial class FaqPage
     {
+
+        /// <summary>
+        /// Footer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Car_Rental_Management_System.Component.Footer Footer;
     }
 }
