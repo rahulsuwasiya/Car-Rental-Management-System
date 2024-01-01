@@ -1,0 +1,235 @@
+﻿@keyframes menu-item-animate {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.navigation-bar {
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: var(--background);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 30px;
+    z-index: 1000;
+    transition: all .5s ease;
+
+    .head-title {
+        font-size: 34px;
+        color: var(--primary);
+        text-transform: capitalize;
+        font-style: var(--font-head-title);
+        font-weight: 700;
+    }
+
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item li {
+        margin: 0 10px;
+        text-transform: capitalize;
+    }
+
+    .nav-item a {
+        color: var(--dark);
+        font-size: 20px;
+        font-weight: 700;
+        transition: all 300ms ease;
+
+        &:hover {
+            color: var(--dark-variant);
+        }
+    }
+
+    .account-box {
+        display: flex;
+
+        .box {
+            margin: 0 5px;
+            padding: 5px 0;
+            width: 100px;
+            box-shadow: var(--box-shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: capitalize;
+            border: .5px solid var(--primary);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 300ms ease;
+
+            &.signup-bar {
+                background: var(--background-variant);
+            }
+
+            &:hover {
+                border: 0px;
+                color: var(--background);
+                background: var(--primary);
+            }
+        }
+
+        .box i {
+            margin-left: 5px;
+        }
+    }
+
+    .menu-toggle {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        z-index: 1000;
+
+        &::before {
+            content: '\f0c9';
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-size: 30px;
+            line-height: 30px;
+            color: var(--primary);
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media(max-width:1182px) {
+
+    .navigation-bar {
+        .nav-item {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(144, 180, 206, 0.7);
+            z-index: 100;
+
+            &.show {
+                display: flex;
+
+                li {
+                    animation: menu-item-animate 1s ease forwards;
+
+                    &:nth-child(2) {
+                        animation-delay: .2s;
+                    }
+
+                    &:nth-child(3) {
+                        animation-delay: .3s;
+                    }
+
+                    &:nth-child(4) {
+                        animation-delay: .4s;
+                    }
+
+                    &:nth-child(5) {
+                        animation-delay: .5s;
+                    }
+
+                    &:nth-child(6) {
+                        animation-delay: .6s;
+                    }
+
+                    &:nth-child(7) {
+                        animation-delay: .7s;
+                    }
+
+                    &:nth-child(8) {
+                        animation-delay: .8s;
+                    }
+                }
+            }
+        }
+
+        nav-item li {
+            opacity: 0;
+
+            a {
+                font-size: 32px;
+                color: var(--background);
+
+                &:hover {
+                    color: var(--background-variant);
+                }
+            }
+        }
+
+        .menu-toggle {
+            display: flex;
+
+            &.show {
+                &::before {
+                    content: '\f057';
+                }
+            }
+        }
+    }
+
+    .car-page {
+        .find-car-bar {
+            .left-container {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width:510px) {
+
+    .navigation-bar {
+        height: 60px;
+        padding: 5px 10px;
+
+        .head-title {
+            font-size: 28px;
+        }
+
+        .account-box {
+            position: absolute;
+            right: 50px;
+
+            .box {
+                width: 40px;
+                height: 40px;
+                padding: 5px;
+            }
+
+            .box p {
+                display: none;
+            }
+
+            .box i {
+                margin-left: 0px;
+            }
+        }
+    }
+}

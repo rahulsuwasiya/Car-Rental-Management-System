@@ -1,0 +1,231 @@
+﻿
+
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;600;800&family=Cormorant+Infant:wght@300;400;500;600;700&family=Hind:wght@300;500;700&display=swap');
+/*========================== Global Style ============================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Assistant', sans-serif;
+}
+
+/*========================== Variable ============================*/
+:root {
+    --primary: #3da9fc;
+    --primary-variant: #90b4ce;
+    --secondary: #ef4565;
+    --dark: #5f5c7b;
+    --dark-variant: #094067;
+    --background: #ffffff;
+    --background-variant: #d8eefe;
+    --box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+    --font-head-title: 'Cormorant Infant', serif;
+    --font-sub-title: 'Hind', sans-serif;
+}
+
+/*========================== Base Style ============================*/
+html::-webkit-scrollbar {
+    width: .5vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+
+.section {
+    padding: 100px 20px 20px 20px;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.head-title {
+    &::before {
+        content: attr(data-small-title);
+        display: block;
+        font-size: 18px;
+        line-height: 24px;
+        color: var(--primary);
+        font-family: var(--font-head-title);
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
+
+.outer-button {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: var(--primary);
+    border: solid 3px var(--primary);
+    transition: all 300ms ease;
+    cursor: pointer;
+
+    .inner-button {
+        background: none;
+        border: none;
+        color: var(--background);
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+
+
+    &:hover {
+        background: var(--background);
+        border: solid 3px var(--primary);
+
+        .inner-button:hover {
+            color: var(--primary);
+        }
+    }
+}
+
+/*Footer*/
+.copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/*========== Key frames ===========*/
+
+@keyframes loop_up {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes odd_line {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(10%);
+    }
+}
+
+@keyframes even_line {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+
+
+/*========== Copyright ===========*/
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+
+
+
+@media(max-width:690px) {
+
+    .section {
+        min-height: 0vh;
+
+        &:not(.download-page) {
+            padding: 100px 10px 10px 10px;
+        }
+    }
+
+    .outer-button {
+        padding: 5px 15px;
+        border-radius: 5px;
+
+        .inner-button {
+            font-size: 16px;
+        }
+    }
+}
+
+
+@keyframes load_line {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+
+@keyframes load_sub_line_bottom {
+    0% {
+        transform: translateY(-73px);
+        height: 46px;
+    }
+
+    100% {
+        transform: translateY(-50px);
+        height: 0px;
+    }
+}
+
+@keyframes load_sub_line_top {
+    0% {
+        transform: translateY(73px);
+        height: 46px;
+    }
+
+    100% {
+        transform: translateY(50px);
+        height: 0px;
+    }
+}
+
+@keyframes work_item {
+    0% {
+        box-shadow: var(--box-shadow);
+        border: 4px solid var(--background-variant);
+    }
+
+    100% {
+        box-shadow: 0px 0px 10px var(--primary);
+        border: 4px solid var(--primary);
+    }
+}

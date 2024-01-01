@@ -1,0 +1,137 @@
+﻿.service-page {
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        .box {
+            width: 700px;
+            height: 100%;
+            position: relative;
+
+            &:nth-child(2) {
+                width: 100%;
+            }
+
+            .image-box {
+                width: 600px;
+                height: 600px;
+                transform: translateX(-250px);
+                display: flex;
+                position: absolute;
+            }
+
+            .image-box img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .head-title {
+                font-size: 48px;
+                line-height: 46px;
+                font-weight: 800;
+                color: var(--dark-variant);
+                margin-bottom: 10px;
+            }
+
+            .sub-title {
+                font-size: 18px;
+                line-height: 22px;
+                color: var(--dark-variant);
+                font-family: var(--font-sub-title);
+            }
+
+            .service-content {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                margin-bottom: 20px;
+
+                .service-item {
+                    width: 300px;
+                    height: 100px;
+                    display: flex;
+
+                    .logo {
+                        width: 50px;
+                        height: 50px;
+                        padding: 0 0 20px 20px;
+                        margin-right: 20px;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .logo i {
+                        font-size: 20px;
+                        position: absolute;
+                        color: var(--primary);
+
+                        &:nth-child(2) {
+                            transform: translate(5px, 2px);
+                            z-index: -1;
+                            color: var(--primary-variant);
+                            opacity: .6;
+                        }
+                    }
+
+                    .head-title {
+                        font-size: 24px;
+                        line-height: 26px;
+                        font-weight: 600;
+                        font-family: inherit;
+                        text-transform: capitalize;
+                    }
+
+                    .sub-title {
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:1050px) {
+    .service-page {
+        .container {
+            .box {
+                .head-title {
+                    font-size: 32px;
+                }
+
+                .sub-title {
+                    font-size: 14px;
+                }
+
+                .service-content {
+                    .service-item {
+                        .service-info {
+                            .head-title {
+                                font-size: 20px;
+                            }
+
+                            .sub-title {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:740px) {
+
+    .service-page {
+        .container {
+            .box:first-child {
+                display: none;
+            }
+        }
+    }
+}

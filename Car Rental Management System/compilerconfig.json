@@ -1,0 +1,53 @@
+﻿[
+  {
+    "outputFile": "StyleSheets/CarsPage.css",
+    "inputFile": "StyleSheets/CarsPage.scss",
+    "minify": {
+      "enabled": false
+    }
+  },
+  {
+    "outputFile": "StyleSheets/FaqPage.css",
+    "inputFile": "StyleSheets/FaqPage.scss"
+  },
+  {
+    "outputFile": "StyleSheets/HomePage.css",
+    "inputFile": "StyleSheets/HomePage.scss"
+  },
+  {
+    "outputFile": "StyleSheets/HowItWorksPage.css",
+    "inputFile": "StyleSheets/HowItWorksPage.scss"
+  },
+  {
+    "outputFile": "StyleSheets/LoginPage.css",
+    "inputFile": "StyleSheets/LoginPage.scss"
+  },
+  {
+    "outputFile": "StyleSheets/MilestonePage.css",
+    "inputFile": "StyleSheets/MilestonePage.scss"
+  },
+  {
+    "outputFile": "StyleSheets/Navbar.css",
+    "inputFile": "StyleSheets/Navbar.scss"
+  },
+  {
+    "outputFile": "StyleSheets/ServicePage.css",
+    "inputFile": "StyleSheets/ServicePage.scss"
+  },
+  {
+    "outputFile": "StyleSheets/Style.css",
+    "inputFile": "StyleSheets/Style.scss"
+  },
+  {
+    "outputFile": "StyleSheets/SuggestPage.css",
+    "inputFile": "StyleSheets/SuggestPage.scss"
+  },
+  {
+    "outputFile": "StyleSheets/TestimonialPage.css",
+    "inputFile": "StyleSheets/TestimonialPage.scss"
+  },
+  {
+    "outputFile": "StyleSheets/UpdatePage.css",
+    "inputFile": "StyleSheets/UpdatePage.scss"
+  }
+]

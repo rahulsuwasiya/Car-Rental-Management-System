@@ -1,0 +1,95 @@
+﻿.faq-page {
+  background: var(--background-variant);
+}
+.faq-page .container .head-title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 46px;
+  font-weight: 800;
+  columns: var(--dark-variant);
+}
+.faq-page .container .sub-title {
+  color: var(--dark);
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 600;
+  font-family: var(--font-sub-title);
+  margin-top: 20px;
+}
+.faq-page .container .faq-container {
+  padding: 50px 0 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  max-height: 80vh;
+  gap: 0;
+}
+.faq-page .container .faq-container .faq-item {
+  width: 100%;
+  background: var(--background);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  box-shadow: var(--box-shadow);
+}
+.faq-page .container .faq-container .faq-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.faq-page .container .faq-container .faq-item .title-quest {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.faq-page .container .faq-container .faq-item .title-quest h2 {
+  color: var(--primary);
+  font-size: 20px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.faq-page .container .faq-container .faq-item .title-quest i {
+  font-size: 24px;
+  color: var(--primary);
+  cursor: pointer;
+}
+.faq-page .container .faq-container .faq-item .answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  color: var(--dark);
+  font-size: 16px;
+  transition: all 0.4s ease;
+}
+.faq-page .container .faq-container .faq-item:target .title-quest h2 {
+  -webkit-line-clamp: 2;
+}
+.faq-page .container .faq-container .faq-item:target .title-quest a {
+  transform: rotate(180deg);
+}
+.faq-page .container .faq-container .faq-item:target .answer {
+  max-height: 100px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1050px) {
+  .faq-page .container .head-title {
+    font-size: 32px;
+  }
+  .faq-page .container .sub-title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .faq-page .container .faq-container .faq-item .title-quest h2 {
+    font-size: 18px;
+  }
+  .faq-page .container .faq-container .faq-item .title-quest a i {
+    font-size: 20px;
+  }
+  .faq-page .container .faq-container .faq-item .answer {
+    font-size: 14px;
+  }
+}
