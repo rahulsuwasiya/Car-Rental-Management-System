@@ -1,5 +1,4 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PasswordRecoveryPage.aspx.cs" Inherits="Car_Rental_Management_System.Pages.PasswordRecoveryPage" %>
-<%@ Register Src="~/Component/Navbar.ascx" TagPrefix="cc" TagName="Navbar" %>
 
 
 <!DOCTYPE html>

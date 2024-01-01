@@ -1,6 +1,4 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UpdatePage.aspx.cs" Inherits="Car_Rental_Management_System.Pages.UpdatePage" %>
-<%@ Register Src="~/Component/Navbar.ascx" TagPrefix="cc" TagName="Navbar" %>
-
 
 <!DOCTYPE html>
 

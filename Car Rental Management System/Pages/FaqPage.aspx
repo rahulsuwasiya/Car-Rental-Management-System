@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FaqPage.aspx.cs" Inherits="Car_Rental_Management_System.Pages.FaqPage" %>
 
-<%@ Register Src="~/Component/Navbar.ascx" TagPrefix="cc" TagName="Navbar" %>
 
 <!DOCTYPE html>
 
