@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Component\Navbar.ascx" />
     <Content Include="Images\App_Store.png" />
     <Content Include="Images\CartoonCar.png" />
     <Content Include="Images\MainCar.png" />
@@ -125,13 +124,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Component\Navbar.ascx.cs">
-      <DependentUpon>Navbar.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Component\Navbar.ascx.designer.cs">
-      <DependentUpon>Navbar.ascx</DependentUpon>
-    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
