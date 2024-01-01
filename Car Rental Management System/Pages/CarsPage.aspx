@@ -65,7 +65,7 @@
                         <img src="" alt="">
                     </div>
                     <div class="circle-profile">
-                        <img src="" alt="">
+                        <img src="" alt="" />
                     </div>
                     <div class="circle-profile">
                         9k+
