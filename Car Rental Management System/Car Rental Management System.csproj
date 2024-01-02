@@ -67,6 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AdminLogin.css">
+      <DependentUpon>AdminLogin.scss</DependentUpon>
+    </Content>
+    <Content Include="Admin\RentalsPage.aspx" />
+    <Content Include="Admin\RentalsPage.css">
+      <DependentUpon>RentalsPage.scss</DependentUpon>
+    </Content>
+    <Content Include="Admin\AdminLogin.aspx" />
     <Content Include="Component\Footer.ascx" />
     <Content Include="Component\Footer.css">
       <DependentUpon>Footer.scss</DependentUpon>
@@ -137,6 +145,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\RentalsPage.aspx.cs">
+      <DependentUpon>RentalsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RentalsPage.aspx.designer.cs">
+      <DependentUpon>RentalsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Component\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -224,6 +246,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\RentalsPage.scss" />
+    <Content Include="Admin\AdminLogin.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

@@ -53,5 +53,13 @@
   {
     "outputFile": "Component/Footer.css",
     "inputFile": "Component/Footer.scss"
+  },
+  {
+    "outputFile": "Admin/RentalsPage.css",
+    "inputFile": "Admin/RentalsPage.scss"
+  },
+  {
+    "outputFile": "Admin/AdminLogin.css",
+    "inputFile": "Admin/AdminLogin.scss"
   }
 ]

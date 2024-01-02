@@ -63,7 +63,7 @@ footer {
     display: inline-block;
     line-height: 1.8;
     text-decoration: none;
-    color: inherit;
+    color: var(--primary);
 }
 
 .footer-distributed .footer-company-name {
@@ -157,7 +157,7 @@ footer {
 }
 
 .footer-distributed .footer-icons a:hover {
-    background-color: #3F71EA;
+    background-color:var(--primary);
 }
 
 .footer-links a:hover {

@@ -13,7 +13,7 @@
                 |
                 <a href="#">Contact</a>
                 |
-                <a href="#">Blog</a>
+                <a href="../Admin/AdminLogin.aspx">Admin</a>
             </p>
 
             <p class="footer-company-name">Copyright © 2024 <strong>Primecars</strong> All rights reserved</p>
@@ -45,7 +45,7 @@
             </p>
             <div class="footer-icons">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
