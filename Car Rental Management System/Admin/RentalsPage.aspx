@@ -26,7 +26,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="CarSectionPage.aspx">
                     <i class="fa-solid fa-car"></i>
                     <span>Car section</span>
                 </a>
@@ -39,7 +39,7 @@
             </li>
         
             <li class="logout">
-                <a href="#">
+                <a href="../index.aspx">
                     <i class="fa-solid fa-right-from-bracket"></i>
                     <span>Logout</span>
                 </a>

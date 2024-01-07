@@ -14,7 +14,7 @@
 </head>
 <body>
         <div class="navigation-bar">
-    <div class="head-title">had <span>rent</span></div>
+    <div class="head-title">Prime<span>Cars</span></div>
     <ul class="nav-item">
         <li><a href="../index.aspx">Home</a></li>
         <li><a href="../Pages/HowItWorksPage.aspx">How it works</a></li>
