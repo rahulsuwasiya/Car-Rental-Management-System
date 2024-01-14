@@ -7,6 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+ 
     <link href="../StyleSheets/Navbar.css" rel="stylesheet" />      
     <link href="../StyleSheets/CarsPage.css" rel="stylesheet" />
     <link href="../Component/Footer.css" rel="stylesheet" />
@@ -237,277 +238,44 @@
 
         <div class="car-item-box">
 
-            <div class="car-item">
-                <div class="car-name">
-                    infinity g37
-                </div>
-                <div class="car-body-category">
-                    sedan
-                </div>
-                <div class="price">
-                    $<p>23</p><span>/day</span>
-                </div>
-                <div class="car-image">
-                    <img src="" alt="">
-                </div>
-                <div class="bottom-content">
-                    <div class="car-feature">
-                        <div class="feature-item">
-                            <i class="fa-solid fa-gear"></i>
-                            <span>auto</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fa-solid fa-couch"></i>
-                            <span>2 seats</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fa-solid fa-gas-pump"></i>
-                            <span>30 MPG</span>
-                        </div>
-                    </div>
-                    <div class="rent-button">
-                        rent now!<i class="fa-solid fa-right-long"></i>
-                    </div>
-                </div>
-            </div>
+          
+            <asp:Repeater ID="reptProduct" runat="server">
+                <ItemTemplate>  <div class="car-item">
+      <div class="car-name">
+          <asp:Label ID="lblName" Text='<%# Eval("CarName") %>' runat="server" />
+      </div>
+      <div class="car-body-category">
+          <asp:Label ID="Label1" Text='<%# Eval("CarCategory") %>' runat="server" />
+      </div>
+      <div class="price">
+          &#8377<p><asp:Literal runat="server" ID="litPrice" Text='<%# Eval("PricePerKm") %>'></asp:Literal></p><div>/day</div>
 
-           <div class="car-item">
-    <div class="car-name">
-        infinity g37
-    </div>
-    <div class="car-body-category">
-        sedan
-    </div>
-    <div class="price">
-        $<p>23</p><span>/day</span>
-    </div>
-    <div class="car-image">
-        <img src="" alt="">
-    </div>
-    <div class="bottom-content">
-        <div class="car-feature">
-            <div class="feature-item">
-                <i class="fa-solid fa-gear"></i>
-                <span>auto</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-couch"></i>
-                <span>2 seats</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-gas-pump"></i>
-                <span>30 MPG</span>
-            </div>
-        </div>
-        <div class="rent-button">
-            rent now!<i class="fa-solid fa-right-long"></i>
-        </div>
-    </div>
-</div>
-
-            <div class="car-item">
-    <div class="car-name">
-        infinity g37
-    </div>
-    <div class="car-body-category">
-        sedan
-    </div>
-    <div class="price">
-        $<p>23</p><span>/day</span>
-    </div>
-    <div class="car-image">
-        <img src="" alt="">
-    </div>
-    <div class="bottom-content">
-        <div class="car-feature">
-            <div class="feature-item">
-                <i class="fa-solid fa-gear"></i>
-                <span>auto</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-couch"></i>
-                <span>2 seats</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-gas-pump"></i>
-                <span>30 MPG</span>
-            </div>
-        </div>
-        <div class="rent-button">
-            rent now!<i class="fa-solid fa-right-long"></i>
-        </div>
-    </div>
-</div>
-
-           <div class="car-item">
-    <div class="car-name">
-        infinity g37
-    </div>
-    <div class="car-body-category">
-        sedan
-    </div>
-    <div class="price">
-        $<p>23</p><span>/day</span>
-    </div>
-    <div class="car-image">
-        <img src="" alt="">
-    </div>
-    <div class="bottom-content">
-        <div class="car-feature">
-            <div class="feature-item">
-                <i class="fa-solid fa-gear"></i>
-                <span>auto</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-couch"></i>
-                <span>2 seats</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-gas-pump"></i>
-                <span>30 MPG</span>
-            </div>
-        </div>
-        <div class="rent-button">
-            rent now!<i class="fa-solid fa-right-long"></i>
-        </div>
-    </div>
-</div>
-
-           <div class="car-item">
-    <div class="car-name">
-        infinity g37
-    </div>
-    <div class="car-body-category">
-        sedan
-    </div>
-    <div class="price">
-        $<p>23</p><span>/day</span>
-    </div>
-    <div class="car-image">
-        <img src="" alt="">
-    </div>
-    <div class="bottom-content">
-        <div class="car-feature">
-            <div class="feature-item">
-                <i class="fa-solid fa-gear"></i>
-                <span>auto</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-couch"></i>
-                <span>2 seats</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-gas-pump"></i>
-                <span>30 MPG</span>
-            </div>
-        </div>
-        <div class="rent-button">
-            rent now!<i class="fa-solid fa-right-long"></i>
-        </div>
-    </div>
-</div>
-
-            <div class="car-item">
-    <div class="car-name">
-        infinity g37
-    </div>
-    <div class="car-body-category">
-        sedan
-    </div>
-    <div class="price">
-        $<p>23</p><span>/day</span>
-    </div>
-    <div class="car-image">
-        <img src="" alt="">
-    </div>
-    <div class="bottom-content">
-        <div class="car-feature">
-            <div class="feature-item">
-                <i class="fa-solid fa-gear"></i>
-                <span>auto</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-couch"></i>
-                <span>2 seats</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-gas-pump"></i>
-                <span>30 MPG</span>
-            </div>
-        </div>
-        <div class="rent-button">
-            rent now!<i class="fa-solid fa-right-long"></i>
-        </div>
-    </div>
-</div>
-
-           <div class="car-item">
-    <div class="car-name">
-        infinity g37
-    </div>
-    <div class="car-body-category">
-        sedan
-    </div>
-    <div class="price">
-        $<p>23</p><span>/day</span>
-    </div>
-    <div class="car-image">
-        <img src="" alt="">
-    </div>
-    <div class="bottom-content">
-        <div class="car-feature">
-            <div class="feature-item">
-                <i class="fa-solid fa-gear"></i>
-                <span>auto</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-couch"></i>
-                <span>2 seats</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-gas-pump"></i>
-                <span>30 MPG</span>
-            </div>
-        </div>
-        <div class="rent-button">
-            rent now!<i class="fa-solid fa-right-long"></i>
-        </div>
-    </div>
-</div>
-
-           <div class="car-item">
-    <div class="car-name">
-        infinity g37
-    </div>
-    <div class="car-body-category">
-        sedan
-    </div>
-    <div class="price">
-        $<p>23</p><span>/day</span>
-    </div>
-    <div class="car-image">
-        <img src="" alt="">
-    </div>
-    <div class="bottom-content">
-        <div class="car-feature">
-            <div class="feature-item">
-                <i class="fa-solid fa-gear"></i>
-                <span>auto</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-couch"></i>
-                <span>2 seats</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-gas-pump"></i>
-                <span>30 MPG</span>
-            </div>
-        </div>
-        <div class="rent-button">
-            rent now!<i class="fa-solid fa-right-long"></i>
-        </div>
-    </div>
-</div>
+      </div>
+      <div class="car-image">
+          <asp:Image ID="productImage" ImageUrl='<%# Eval("CarImage") %>' runat="server" />
+      </div>
+      <div class="bottom-content">
+          <div class="car-feature">
+              <div class="feature-item">
+                  <i class="fa-solid fa-gear"></i>
+                  <span>auto</span>
+              </div>
+              <div class="feature-item">
+                  <i class="fa-solid fa-couch"></i>
+                  <span>2 seats</span>
+              </div>
+              <div class="feature-item">
+                  <i class="fa-solid fa-gas-pump"></i>
+                  <span>30 MPG</span>
+              </div>
+          </div>
+          <div class="rent-button">
+              rent now!<i class="fa-solid fa-right-long"></i>
+          </div>
+      </div>
+  </div></ItemTemplate>
+            </asp:Repeater>
+           
 
         </div>
     </div>

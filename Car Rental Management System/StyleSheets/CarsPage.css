@@ -292,9 +292,8 @@
   color: var(--dark-variant);
 }
 .car-page .car-container .car-item-box .car-item .price span {
-  position: absolute;
   bottom: 0;
-  left: 45px;
+  left: 10px;
 }
 .car-page .car-container .car-item-box .car-item .car-image {
   width: 230px;
