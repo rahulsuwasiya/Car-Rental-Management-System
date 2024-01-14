@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
-             <div class="navigation-bar">
+    <div class="navigation-bar">
     <div class="head-title">Prime<span>Cars</span></div>
     <ul class="nav-item">
         <li><a href="../index.aspx">Home</a></li>
@@ -33,7 +33,7 @@
             <i class="fa-solid fa-right-to-bracket"></i>
         </div>
         <div class="box signup-bar" onclick="window.location.href='../Pages/RegisterPage.aspx';">
-            <p>Sign Up</p>
+            <asp:Label runat="server" ID="lblSignUp" Visible="true" Text="Sign Up"></asp:Label>
             <i class="fa-solid fa-user-plus"></i>
         </div>
     </div>
@@ -48,7 +48,8 @@
         <div class="recover">
             <a href="PasswordRecoveryPage.aspx">Forgot Password?</a>
         </div>
-        <asp:Button Text="Login" runat="server" CssClass="button" />
+        <asp:Button Text="Login" runat="server" OnClick="Unnamed_Click" CssClass="button" />
+        <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red" Visible="false"></asp:Label>
      <div class="member">
            Not a member? <a href="RegisterPage.aspx">Register Now</a>   
      </div>

@@ -121,6 +121,9 @@
     <Content Include="Admin\AdminLogin.css">
       <DependentUpon>AdminLogin.scss</DependentUpon>
     </Content>
+    <Content Include="Admin\AdminLogin.min.css">
+      <DependentUpon>AdminLogin.css</DependentUpon>
+    </Content>
     <Content Include="Admin\CarSectionPage.aspx" />
     <Content Include="Admin\CustomerSection.aspx" />
     <Content Include="Admin\RentalsPage.aspx" />
@@ -128,6 +131,9 @@
       <DependentUpon>RentalsPage.scss</DependentUpon>
     </Content>
     <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\RentalsPage.min.css">
+      <DependentUpon>RentalsPage.css</DependentUpon>
+    </Content>
     <Content Include="Component\Footer.ascx" />
     <Content Include="Component\Footer.css">
       <DependentUpon>Footer.scss</DependentUpon>
@@ -159,23 +165,44 @@
     <Content Include="StyleSheets\FaqPage.css">
       <DependentUpon>FaqPage.scss</DependentUpon>
     </Content>
+    <Content Include="StyleSheets\FaqPage.min.css">
+      <DependentUpon>FaqPage.css</DependentUpon>
+    </Content>
     <Content Include="StyleSheets\HomePage.css">
       <DependentUpon>HomePage.scss</DependentUpon>
+    </Content>
+    <Content Include="StyleSheets\HomePage.min.css">
+      <DependentUpon>HomePage.css</DependentUpon>
     </Content>
     <Content Include="StyleSheets\HowItWorksPage.css">
       <DependentUpon>HowItWorksPage.scss</DependentUpon>
     </Content>
+    <Content Include="StyleSheets\HowItWorksPage.min.css">
+      <DependentUpon>HowItWorksPage.css</DependentUpon>
+    </Content>
     <Content Include="StyleSheets\LoginPage.css">
       <DependentUpon>LoginPage.scss</DependentUpon>
+    </Content>
+    <Content Include="StyleSheets\LoginPage.min.css">
+      <DependentUpon>LoginPage.css</DependentUpon>
     </Content>
     <Content Include="StyleSheets\MilestonePage.css">
       <DependentUpon>MilestonePage.scss</DependentUpon>
     </Content>
+    <Content Include="StyleSheets\MilestonePage.min.css">
+      <DependentUpon>MilestonePage.css</DependentUpon>
+    </Content>
     <Content Include="StyleSheets\Navbar.css">
       <DependentUpon>Navbar.scss</DependentUpon>
     </Content>
+    <Content Include="StyleSheets\Navbar.min.css">
+      <DependentUpon>Navbar.css</DependentUpon>
+    </Content>
     <Content Include="StyleSheets\ServicePage.css">
       <DependentUpon>ServicePage.scss</DependentUpon>
+    </Content>
+    <Content Include="StyleSheets\ServicePage.min.css">
+      <DependentUpon>ServicePage.css</DependentUpon>
     </Content>
     <Content Include="StyleSheets\Style.css">
       <DependentUpon>Style.scss</DependentUpon>
@@ -186,8 +213,14 @@
     <Content Include="StyleSheets\SuggestPage.css">
       <DependentUpon>SuggestPage.scss</DependentUpon>
     </Content>
+    <Content Include="StyleSheets\SuggestPage.min.css">
+      <DependentUpon>SuggestPage.css</DependentUpon>
+    </Content>
     <Content Include="StyleSheets\TestimonialPage.css">
       <DependentUpon>TestimonialPage.scss</DependentUpon>
+    </Content>
+    <Content Include="StyleSheets\TestimonialPage.min.css">
+      <DependentUpon>TestimonialPage.css</DependentUpon>
     </Content>
     <Content Include="StyleSheets\UpdatePage.css">
       <DependentUpon>UpdatePage.scss</DependentUpon>

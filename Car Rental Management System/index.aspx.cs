@@ -11,7 +11,19 @@ namespace Car_Rental_Management_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
+            if (Session["UserName"] != null)
+            {
+                lblSignUp.Text = Session["UserName"].ToString();
+                lblLogIn.Text = "Logout";
+                SignUpIcon.Visible = false;
+                LoginIcon.Visible = false;
+                LogoutIcon.Visible = true;
+            }
+            else
+            {
+                
+            }
         }
     }
 }

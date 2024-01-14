@@ -6,6 +6,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+   
     <link rel="stylesheet" type="text/css" href="StyleSheet/HomePage.css" />
     <title></title>
     <link href="StyleSheets/Navbar.css" rel="stylesheet" />
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
+    <form id="form1" runat="server">
          <div class="navigation-bar">
     <div class="head-title">Prime<span>Cars</span></div>
     <ul class="nav-item">
@@ -30,12 +32,13 @@
     </ul>
     <div class="account-box">
         <div class="box login-bar" onclick="window.location.href='../Pages/LoginPage.aspx';">
-            <p>Login</p>
-            <i class="fa-solid fa-right-to-bracket"></i>
+            <asp:Label runat="server" ID="lblLogIn" Visible="true" Text="Login" />
+            <i id="LoginIcon" runat="server" visible="true" class="fa-solid fa-right-to-bracket"></i>
+            <i id="LogoutIcon" runat="server" visible="false" class="fa-solid fa-right-from-bracket"></i>
         </div>
         <div class="box signup-bar" onclick="window.location.href='../Pages/RegisterPage.aspx';">
-            <p>Sign Up</p>
-            <i class="fa-solid fa-user-plus"></i>
+            <asp:Label runat="server" ID="lblSignUp" Visible="true" Text="Sign Up" />
+            <i id="SignUpIcon" runat="server" class="fa-solid fa-user-plus"></i>
         </div>
     </div>
    <div class="menu-toggle" onclick="toggleMenu()"></div>
@@ -68,7 +71,7 @@
         </div>
     </div>
 
-    <form id="form1" runat="server" class="form-container">
+    <div class="form-container">
         <div class="input-group">
              <asp:TextBox placeholder="pick up location" TextMode="SingleLine" ID="plocation_txt" runat="server" />
             <div class="input-sub-group">
@@ -87,8 +90,10 @@
             Search
         </button>
 
+    
+</div>
+         </div>
     </form>
-</div> 
    
 <uc1:Footer runat="server" id="Footer" />
      <script>
