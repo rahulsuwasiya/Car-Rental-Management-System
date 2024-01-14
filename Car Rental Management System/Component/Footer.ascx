@@ -16,7 +16,7 @@
                 <a href="../Admin/AdminLogin.aspx">Admin</a>
             </p>
 
-            <p class="footer-company-name">Copyright © 2024 <strong>Primecars</strong> All rights reserved</p>
+            <p class="footer-company-name">Copyright © 2024 <strong>PrimeCars</strong> All rights reserved</p>
         </div>
 
         <div class="footer-center">
@@ -32,16 +32,14 @@
             </div>
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:sagar00001.co@gmail.com">xyz@gmail.com</a></p>
+                <p><a href="#">PrimeCars@gmail.com</a></p>
             </div>
         </div>
         <div class="footer-right">
             <p class="footer-company-about">
                 <span>About the company</span>
-                <strong>Prime Car</strong> is a Youtube channel where you can find more creative CSS Animations
-                and
-                Effects along with
-                HTML, JavaScript and Projects using C/C++.
+                <strong>PrimeCars</strong> Elevating Your Journeys with Style and Safety. 
+                Drive with Confidence, Drive Prime. Your Trusted Partner in Every Mile.
             </p>
             <div class="footer-icons">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>

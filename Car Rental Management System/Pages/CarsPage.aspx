@@ -50,8 +50,8 @@
                     Book car in easy steps
                 </div>
                 <div class="sub-title">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis velit quae iure.
-                    Magnam, itaque.
+                    Book your ideal ride in minutes—choose, confirm, customize with optional extras,
+                    and hit the road hassle-free!
                 </div>
             </div>
             <div class="bottom-box">

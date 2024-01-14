@@ -58,19 +58,17 @@
                         </div>
                         <div class="profile-info">
                             <div class="profile-name">
-                                lina
+                                John D
                             </div>
                             <div class="profile-job">
-                                creator
+                                Creator
                             </div>
                         </div>
                     </div>
                     <div class="middle-box">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Distinctio sint aut consequatur nostrum,
-                        repellat architecto id iusto itaque quo officiis
-                        ullam, accusamus eum nulla, minima voluptate dolores
-                        magni aspernatur molestias.
+                        PrimeCars exceeded my expectations! The booking process was seamless, 
+                        the vehicles were top-notch, and the service was friendly.
+                        PrimeCars is now my go-to for stress-free travels!
                     </div>
 
                     <div class="bottom-box">
@@ -89,19 +87,18 @@
         </div>
         <div class="profile-info">
             <div class="profile-name">
-                lina
+                Sarah M
             </div>
             <div class="profile-job">
-                creator
+                Businessman
             </div>
         </div>
     </div>
     <div class="middle-box">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Distinctio sint aut consequatur nostrum,
-        repellat architecto id iusto itaque quo officiis
-        ullam, accusamus eum nulla, minima voluptate dolores
-        magni aspernatur molestias.
+        Exceptional experience with PrimeCars! 
+        The car was spotless, and the customer service was outstanding.
+        I'll definitely choose them for my future trips. 
+        PrimeCars sets a high standard!
     </div>
 
     <div class="bottom-box">
@@ -120,19 +117,18 @@
                         </div>
                         <div class="profile-info">
                             <div class="profile-name">
-                                lina
+                                David L
                             </div>
                             <div class="profile-job">
-                                creator
+                                Lawyer
                             </div>
                         </div>
                     </div>
                     <div class="middle-box">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Distinctio sint aut consequatur nostrum,
-                        repellat architecto id iusto itaque quo officiis
-                        ullam, accusamus eum nulla, minima voluptate dolores
-                        magni aspernatur molestias.
+                        PrimeCars made our family road trip a breeze.
+                        The spacious SUV was perfect, 
+                        and the 24/7 support gave us peace of mind throughout our journey.
+                        Highly recommend PrimeCars for hassle-free travel
                     </div>
 
                     <div class="bottom-box">
@@ -154,16 +150,14 @@
                 lina
             </div>
             <div class="profile-job">
-                creator
+                Professor
             </div>
         </div>
     </div>
     <div class="middle-box">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Distinctio sint aut consequatur nostrum,
-        repellat architecto id iusto itaque quo officiis
-        ullam, accusamus eum nulla, minima voluptate dolores
-        magni aspernatur molestias.
+        Impressed with the variety of cars and the straightforward booking system at PrimeCars. 
+        Renting a car was easy and enjoyable.
+        PrimeCars has earned a satisfied customer who'll be back for more!
     </div>
 
     <div class="bottom-box">
@@ -182,19 +176,17 @@
                         </div>
                         <div class="profile-info">
                             <div class="profile-name">
-                                lina
+                                Arun T
                             </div>
                             <div class="profile-job">
-                                creator
+                                Artist
                             </div>
                         </div>
                     </div>
                     <div class="middle-box">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Distinctio sint aut consequatur nostrum,
-                        repellat architecto id iusto itaque quo officiis
-                        ullam, accusamus eum nulla, minima voluptate dolores
-                        magni aspernatur molestias.
+                       Reliable, affordable, and stylish! PrimeCars delivered on every aspect. 
+                        The unexpected promos were a pleasant surprise.
+                        I'll be recommending PrimeCars to friends and colleagues for sure!
                     </div>
 
                     <div class="bottom-box">

@@ -51,8 +51,10 @@
                 Best service
             </div>
             <div class="sub-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, in voluptas.
+                Get the best with us – easy, affordable, and always reliable. Choose PrimeCars for a hassle-free, enjoyable ride every time!<br />
             </div>
+            <br />
+            <br />
             <div class="service-content">
                 <div class="service-item">
                     <div class="logo">
@@ -64,7 +66,7 @@
                             location
                         </div>
                         <div class="sub-title">
-                            Lorem ipsum dolor sit amet consectetvident.
+                             Convenient, accessible rental points always.
                         </div>
                     </div>
                 </div>
@@ -78,7 +80,7 @@
                             price
                         </div>
                         <div class="sub-title">
-                            Lorem ipsum dolor sit amet consectetvident.
+                            Affordable rates for every budget.
                         </div>
                     </div>
                 </div>
@@ -92,7 +94,7 @@
                             variety
                         </div>
                         <div class="sub-title">
-                            Lorem ipsum dolor sit amet consectetvident.
+                            Diverse fleet for all preferences.
                         </div>
                     </div>
                 </div>
@@ -106,7 +108,7 @@
                             24/7 support
                         </div>
                         <div class="sub-title">
-                            Lorem ipsum dolor sit amet consectetvident.
+                            Assistance available around the clock.
                         </div>
                     </div>
                 </div>
@@ -120,7 +122,7 @@
                             promos every day
                         </div>
                         <div class="sub-title">
-                            Lorem ipsum dolor sit amet consectetvident.
+                            Daily promotions for extra savings.
                         </div>
                     </div>
                 </div>
@@ -134,7 +136,7 @@
                             mileage unlimited
                         </div>
                         <div class="sub-title">
-                            Lorem ipsum dolor sit amet consectetvident.
+                            Explore freely with unlimited mileage.
                         </div>
                     </div>
                 </div>

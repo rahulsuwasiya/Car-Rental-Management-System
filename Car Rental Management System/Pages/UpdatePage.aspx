@@ -52,7 +52,7 @@
                  Get all the update in your inbox
              </div>
              <div class="update-info">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius sint reiciendis vel odio, vitae modi aut, quis sunt magni aliquam aperiam. Magnam nemo magni, aliquam velit debitis totam aperiam.
+                Stay in the loop with PrimeCars! Subscribe now to receive all the latest updates, promotions, and news straight to your inbox. Your journey starts with the latest information at your fingertips!
              </div>
              <div class="email-box">
                  <asp:TextBox TextMode="SingleLine" runat="server" placeholder="enter your email"></asp:TextBox>

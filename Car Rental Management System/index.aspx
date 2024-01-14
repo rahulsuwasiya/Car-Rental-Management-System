@@ -50,8 +50,10 @@
                 Easy way<br /> to rent a <span>dream car</span><br />at an affordable <span>price!</span>
             </div>
             <div class="sub-title">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                Live the life of Luxury.<br />
+                Just rent a car of your wish from our vast collection.<br />
+                Enjoy every moment with your family<br />
+                Join us to make this family vast.
             </div>
             <div class="download-box">
                 <div class="content-box">

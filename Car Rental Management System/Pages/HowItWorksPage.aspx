@@ -46,27 +46,27 @@
             <div class="item">
                 <i class="fa-solid fa-location-crosshairs"></i>
                 <div class="head-title">set point</div>
-                <div class="sub-title">Lorem ipsum dolor sit amet.</div>
+                <div class="sub-title">Choose your destination and plan.</div>
             </div>
             <div class="item">
                 <i class="fa-solid fa-calendar"></i>
                 <div class="head-title">select a date</div>
-                <div class="sub-title">Lorem ipsum dolor sit amet.</div>
+                <div class="sub-title">Pick your preferred rental timeframe.</div>
             </div>
             <div class="item">
                 <i class="fa-solid fa-car"></i>
                 <div class="head-title">book a car</div>
-                <div class="sub-title">Lorem ipsum dolor sit amet.</div>
+                <div class="sub-title">Reserve with a simple online click.</div>
             </div>
             <div class="item">
                 <i class="fa-solid fa-square-check"></i>
                 <div class="head-title">adjust needs</div>
-                <div class="sub-title">Lorem ipsum dolor sit amet.</div>
+                <div class="sub-title">Customize with extras for comfort.</div>
             </div>
             <div class="item">
                 <i class="fa-solid fa-dollar-sign"></i>
                 <div class="head-title">make a deal</div>
-                <div class="sub-title">Lorem ipsum dolor sit amet.</div>
+                <div class="sub-title">Confirm details, secure payment, and go.</div>
             </div>
         </div>
 

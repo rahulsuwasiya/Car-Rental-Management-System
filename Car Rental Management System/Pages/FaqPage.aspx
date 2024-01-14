@@ -46,37 +46,37 @@
              Question that are always asked
          </div>
          <div class="sub-title">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae explicabo pariatur facere.<br/>Lorem ipsum dolor sit amet consectetur.<br/>Lorem ipsum dolor sit.
+             Discover answers to common queries on our FAQ page, covering topics like booking, rates, and policies.<br /> For personalized assistance, our 24/7 customer support is always here to help.
          </div>
          <div class="faq-container">
 
              <div class="faq-item" id="quest1">
                  <div class="title-quest">
-                     <h2>can i rent a car at 18 yo?</h2>
+                     <h2>Can i rent a car at 18 yo?</h2>
                      <a href="#quest1"><i class="fa-solid fa-caret-down"></i></a>
                  </div>
-                 <div class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis quisquam, provident debitis laudantium quia amet omnis totam fuga error blanditiis. Tempora error dolores perferendis fugit tempore necessitatibus, deleniti ea!</div>
+                 <div class="answer">At PrimeCars, our standard policy requires renters to be at least 21 years old. However, we understand that younger drivers may need our services. We offer flexibility for drivers aged 18-20 with an additional surcharge and may have specific conditions. For details, please contact our customer support to discuss options and ensure a smooth rental process.</div>
              </div>
              <div class="faq-item" id="quest2">
                  <div class="title-quest">
-                     <h2>how do i change and cancel my reservation?</h2>
+                     <h2>How do i change and cancel my reservation?</h2>
                      <a href="#quest2"><i class="fa-solid fa-caret-down"></i></a>
                  </div>
-                 <div class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis quisquam, provident debitis laudantium quia amet omnis totam fuga error blanditiis. Tempora error dolores perferendis fugit tempore necessitatibus, deleniti ea!</div>
+                 <div class="answer">To modify or cancel your reservation with PrimeCars, log in to your account or reach out to our 24/7 customer support. Navigate to 'Manage Reservations' for modifications, and for cancellations, select the cancellation option on our platform. Please review our cancellation policy for any applicable fees. We're here to assist you for a hassle-free experience with PrimeCars.</div>
              </div>
              <div class="faq-item" id="quest3">
                  <div class="title-quest">
-                     <h2>will enterprise pick me up?</h2>
+                     <h2>Will enterprise pick me up?</h2>
                      <a href="#quest3"><i class="fa-solid fa-caret-down"></i></a>
                  </div>
-                 <div class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis quisquam, provident debitis laudantium quia amet omnis totam fuga error blanditiis. Tempora error dolores perferendis fugit tempore necessitatibus, deleniti ea!</div>
+                 <div class="answer">At PrimeCars, we strive to provide convenience. While we don't currently offer a pick-up service, we have easily accessible rental locations for a seamless experience. Feel free to visit one of our branches, and our team will ensure a smooth and efficient process to get you on the road swiftly.</div>
              </div>
              <div class="faq-item" id="quest4">
                  <div class="title-quest">
-                     <h2>does enterprise sell vehicle?</h2>
+                     <h2>Does enterprise sell vehicle?</h2>
                      <a href="#quest4"><i class="fa-solid fa-caret-down"></i></a>
                  </div>
-                 <div class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis quisquam, provident debitis laudantium quia amet omnis totam fuga error blanditiis. Tempora error dolores perferendis fugit tempore necessitatibus, deleniti ea!</div>
+                 <div class="answer">At PrimeCars, we currently focus exclusively on providing rental services and do not engage in vehicle sales. Our priority is to offer a premium and hassle-free car rental experience for our customers. If you're looking for a reliable rental vehicle, explore our diverse fleet and enjoy the journey with PrimeCars.</div>
              </div>
 
          </div>

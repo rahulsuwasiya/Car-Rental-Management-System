@@ -45,9 +45,10 @@
                  The most popular car
              </div>
              <div class="sub-title">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus pariatur vel atque sapiente nam,
-                 at soluta harum blanditiis eveniet laboriosam commodi necessitatibus dignissimos libero officia nemo
-                 ad porro accusamus est!
+                 Power, style, and versatility meet in this popular choice. 
+                 Ideal for city or off-road adventures, it combines advanced tech with safety features. 
+                 Families and enthusiasts love its spacious interior, 
+                 making it a reliable and stylish pick for any journey.
              </div>
              <div class="car-name">
                  toyota fortuner 2.8 VRZ 4X2 A/T EURO 4
@@ -55,27 +56,27 @@
              <div class="superiority-box">
                  <div class="items">
                     <i class="fa-solid fa-square-check"></i>
-                     lorem ipsum dolor sit amet.
+                    Powerful Engine.
                  </div>
                  <div class="items">
                      <i class="fa-solid fa-square-check"></i>
-                     lorem ipsum dolor sit amet.
+                     Cutting-Edge Technology.
                  </div>
                  <div class="items">
                      <i class="fa-solid fa-square-check"></i>
-                     lorem ipsum dolor sit amet.
+                     Euro 4 Compliance.
                  </div>
                  <div class="items">
                      <i class="fa-solid fa-square-check"></i>
-                     lorem ipsum dolor sit amet.
+                     Versatile 4X2 Capability.
                  </div>
                  <div class="items">
                      <i class="fa-solid fa-square-check"></i>
-                     lorem ipsum dolor sit amet.
+                     Automatic Transmission.
                  </div>
                  <div class="items">
                      <i class="fa-solid fa-square-check"></i>
-                     lorem ipsum dolor sit amet.
+                     Sophisticated Design.
                  </div>
 
              </div>
