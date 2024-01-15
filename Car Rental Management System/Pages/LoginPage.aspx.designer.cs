@@ -15,13 +15,22 @@ namespace Car_Rental_Management_System.Pages
     {
 
         /// <summary>
-        /// lblSignUp control.
+        /// b2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSignUp;
+        protected global::System.Web.UI.HtmlControls.HtmlButton b2;
+
+        /// <summary>
+        /// b1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton b1;
 
         /// <summary>
         /// form1 control.

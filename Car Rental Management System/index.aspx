@@ -31,15 +31,12 @@
         <li><a href="../Pages/FaqPage.aspx">Faq</a></li>
     </ul>
     <div class="account-box">
-        <div class="box login-bar" onclick="window.location.href='../Pages/LoginPage.aspx';">
-            <asp:Label runat="server" ID="lblLogIn" Visible="true" Text="Login" />
-            <i id="LoginIcon" runat="server" visible="true" class="fa-solid fa-right-to-bracket"></i>
-            <i id="LogoutIcon" runat="server" visible="false" class="fa-solid fa-right-from-bracket"></i>
-        </div>
-        <div class="box signup-bar" onclick="window.location.href='../Pages/RegisterPage.aspx';">
-            <asp:Label runat="server" ID="lblSignUp" Visible="true" Text="Sign Up" />
-            <i id="SignUpIcon" runat="server" class="fa-solid fa-user-plus"></i>
-        </div>
+            <button runat="server"  visible="true" id="b2" class="box login-bar" onserverclick="b2_ServerClick" >
+                Login <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+            <button runat="server"  visible="true" id="b1" class="box signup-bar" onserverclick="b1_ServerClick" >
+                Sign Up <i class="fa-solid fa-user-plus"></i>
+            </button>
     </div>
    <div class="menu-toggle" onclick="toggleMenu()"></div>
 </div>
@@ -88,11 +85,11 @@
                 <asp:TextBox placeholder="return time" TextMode="Time" ID="rtime_txt" runat="server" />
             </div>
         </div>
-        <a href="Pages/CarsPage.aspx">
-            <button type="button" class="form-button">
+        
+            <button type="button" runat="server" class="form-button" onserverclick="Unnamed_ServerClick" >
             Search
         </button>
-         </a>
+         
 
     
 </div>

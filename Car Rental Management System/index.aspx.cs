@@ -14,16 +14,28 @@ namespace Car_Rental_Management_System
             
             if (Session["UserName"] != null)
             {
-                lblSignUp.Text = Session["UserName"].ToString();
-                lblLogIn.Text = "Logout";
-                SignUpIcon.Visible = false;
-                LoginIcon.Visible = false;
-                LogoutIcon.Visible = true;
+                
+               
             }
             else
             {
                 
             }
+        }
+
+        protected void b2_ServerClick(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void b1_ServerClick(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Unnamed_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("Pages/CarsPage.aspx");
         }
     }
 }

@@ -30,14 +30,12 @@
         <li><a href="../Pages/FaqPage.aspx">Faq</a></li>
     </ul>
     <div class="account-box">
-        <div class="box login-bar" onclick="window.location.href='../Pages/LoginPage.aspx';">
-            <p>Login</p>
-            <i class="fa-solid fa-right-to-bracket"></i>
-        </div>
-        <div class="box signup-bar" onclick="window.location.href='../Pages/RegisterPage.aspx';">
-            <p>Sign Up</p>
-            <i class="fa-solid fa-user-plus"></i>
-        </div>
+               <button runat="server"  visible="true" id="b2" class="box login-bar"  >
+    Login <i class="fa-solid fa-right-to-bracket"></i>
+</button>
+<button runat="server"  visible="true" id="b1" class="box signup-bar"  >
+    Sign Up <i class="fa-solid fa-user-plus"></i>
+</button>
     </div>
    <div class="menu-toggle" onclick="toggleMenu()"></div>
 </div>
