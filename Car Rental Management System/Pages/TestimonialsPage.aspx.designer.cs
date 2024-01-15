@@ -15,22 +15,40 @@ namespace Car_Rental_Management_System.Pages
     {
 
         /// <summary>
-        /// b2 control.
+        /// BtnLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton b2;
+        protected global::System.Web.UI.HtmlControls.HtmlButton BtnLogin;
 
         /// <summary>
-        /// b1 control.
+        /// BtnLogout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton b1;
+        protected global::System.Web.UI.HtmlControls.HtmlButton BtnLogout;
+
+        /// <summary>
+        /// BtnSignUp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton BtnSignUp;
+
+        /// <summary>
+        /// btnUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label btnUser;
 
         /// <summary>
         /// Footer control.

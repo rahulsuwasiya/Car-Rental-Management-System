@@ -40,5 +40,19 @@ namespace Car_Rental_Management_System.Pages
             }
         }
 
+        protected void BtnLogin_ServerClick(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void BtnLogout_ServerClick(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void BtnSignUp_ServerClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

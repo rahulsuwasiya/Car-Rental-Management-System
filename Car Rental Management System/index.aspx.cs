@@ -12,30 +12,31 @@ namespace Car_Rental_Management_System
         protected void Page_Load(object sender, EventArgs e)
         {
             
-            if (Session["UserName"] != null)
-            {
-                
-               
-            }
-            else
-            {
-                
-            }
+            
         }
 
-        protected void b2_ServerClick(object sender, EventArgs e)
+
+
+     
+
+        protected void BtnLogin_ServerClick1(object sender, EventArgs e)
         {
 
         }
 
-        protected void b1_ServerClick(object sender, EventArgs e)
+        protected void BtnLogout_ServerClick(object sender, EventArgs e)
         {
 
         }
 
-        protected void Unnamed_ServerClick(object sender, EventArgs e)
+        protected void BtnSignUp_ServerClick(object sender, EventArgs e)
         {
-            Response.Redirect("Pages/CarsPage.aspx");
+
+        }
+
+        protected void Search_ServerClick(object sender, EventArgs e)
+        {
+
         }
     }
 }

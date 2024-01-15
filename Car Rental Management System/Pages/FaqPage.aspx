@@ -27,12 +27,16 @@
         <li><a href="../Pages/FaqPage.aspx">Faq</a></li>
     </ul>
     <div class="account-box">
-                <button runat="server"  visible="true" id="b2" class="box login-bar"  >
-    Login <i class="fa-solid fa-right-to-bracket"></i>
+          <button runat="server"  visible="true" id="BtnLogin" class="box login-bar" onserverclick="BtnLogin_ServerClick" >
+     Login <i class="fa-solid fa-right-to-bracket"></i>
+ </button>
+                <button runat="server"  visible="false" id="BtnLogout" class="box login-bar" onserverclick="BtnLogout_ServerClick" >
+    Logout <i class="fa-solid fa-right-to-bracket"></i>
 </button>
-<button runat="server"  visible="true" id="b1" class="box signup-bar"  >
-    Sign Up <i class="fa-solid fa-user-plus"></i>
-</button>
+ <button runat="server"  visible="true" id="BtnSignUp" class="box signup-bar" onserverclick="BtnSignUp_ServerClick" >
+     Sign Up <i class="fa-solid fa-user-plus"></i>
+ </button>
+        <asp:Label Text="Rahul" visible="false" ID="btnUser" runat="server" />
     </div>
    <div class="menu-toggle" onclick="toggleMenu()"></div>
 </div>
