@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
+    <form runat="server">
            <div class="navigation-bar">
     <div class="head-title">Prime<span>Cars</span></div>
     <ul class="nav-item">
@@ -35,7 +36,7 @@
  <button runat="server"  visible="true" id="BtnSignUp" class="box signup-bar" onserverclick="BtnSignUp_ServerClick" >
      Sign Up <i class="fa-solid fa-user-plus"></i>
  </button>
-        <asp:Label Text="Rahul" visible="false" ID="btnUser" runat="server" />
+        <asp:Label Text="Rahul" visible="false" ID="lblUser" runat="server" />
     </div>
    <div class="menu-toggle" onclick="toggleMenu()"></div>
 </div>
@@ -75,6 +76,8 @@
     </div>
 </div> 
     <uc1:Footer runat="server" ID="Footer" />
+        
+        </form>
      <script>
 
      const menuButton = document.querySelector(".menu-toggle");

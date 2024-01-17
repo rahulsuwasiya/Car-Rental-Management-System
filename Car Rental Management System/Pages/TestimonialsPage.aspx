@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
+    <form runat="server">
             <div class="navigation-bar">
     <div class="head-title">Prime<span>Cars</span></div>
     <ul class="nav-item">
@@ -30,7 +31,7 @@
         <li><a href="../Pages/FaqPage.aspx">Faq</a></li>
     </ul>
     <div class="account-box">
-                                    <button runat="server"  visible="true" id="BtnLogin" class="box login-bar" onserverclick="BtnLogin_ServerClick" >
+                                                                       <button runat="server"  visible="true" id="BtnLogin" class="box login-bar" onserverclick="BtnLogin_ServerClick" >
      Login <i class="fa-solid fa-right-to-bracket"></i>
  </button>
                 <button runat="server"  visible="false" id="BtnLogout" class="box login-bar" onserverclick="BtnLogout_ServerClick" >
@@ -39,7 +40,7 @@
  <button runat="server"  visible="true" id="BtnSignUp" class="box signup-bar" onserverclick="BtnSignUp_ServerClick" >
      Sign Up <i class="fa-solid fa-user-plus"></i>
  </button>
-        <asp:Label Text="Rahul" visible="false" ID="btnUser" runat="server" />
+        <asp:Label Text="Rahul" visible="false" ID="lblUser" runat="server" />
     </div>
    <div class="menu-toggle" onclick="toggleMenu()"></div>
 </div>
@@ -237,7 +238,7 @@
             <div class="swiper-pagination"> </div>
         </div>
     </div>
-    <uc1:Footer runat="server" ID="Footer" />
+    <uc1:Footer runat="server" ID="Footer" /></form>
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
