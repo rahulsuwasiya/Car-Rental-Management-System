@@ -37,7 +37,7 @@
  <button runat="server"  visible="true" id="BtnSignUp" class="box signup-bar" onserverclick="BtnSignUp_ServerClick" >
      Sign Up <i class="fa-solid fa-user-plus"></i>
  </button>
-        <asp:Label Text="Rahul" visible="false" ID="lblUser" runat="server" />
+        <asp:Label Text="" visible="false" ID="lblUser" runat="server" />
     </div>
    <div class="menu-toggle" onclick="toggleMenu()"></div>
 </div>

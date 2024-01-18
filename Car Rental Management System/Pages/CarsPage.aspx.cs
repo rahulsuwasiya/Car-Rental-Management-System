@@ -23,6 +23,7 @@ namespace Car_Rental_Management_System.Pages
                 BtnLogin.Visible = false;
                 BtnLogout.Visible = true;
                 BtnSignUp.Visible = false;
+                lblUser.Text= "Hii, "+Session["UserName"].ToString();
                 lblUser.Visible = true;
 
             }
