@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
-    
+            <form id="form1" runat="server">
     <div class="navigation-bar">
-    <div class="head-title">had <span>rent</span></div>
+    <div class="head-title">Prime<span>Cars</span></div>
     <ul class="nav-item">
         <li><a href="../index.aspx">Home</a></li>
         <li><a href="../Pages/HowItWorksPage.aspx">How it works</a></li>
@@ -28,19 +28,15 @@
         <li><a href="../Pages/FaqPage.aspx">Faq</a></li>
     </ul>
     <div class="account-box">
-        <div class="box login-bar" onclick="window.location.href='../Pages/LoginPage.aspx';">
-            <p>Login</p>
-            <i class="fa-solid fa-right-to-bracket"></i>
-        </div>
-        <div class="box signup-bar" onclick="window.location.href='../Pages/RegisterPage.aspx';">
-            <p>Sign Up</p>
-            <i class="fa-solid fa-user-plus"></i>
-        </div>
+   
+        
+
+        <asp:Label Text="" visible="false" ID="lblUser" runat="server" />
     </div>
    <div class="menu-toggle" onclick="toggleMenu()"></div>
 </div>
    <div class="login-container">
-        <form id="form1" runat="server">
+        
 <div class="wrapper">
      <h1>Login</h1>
         <asp:TextBox runat="server" ID="Unametxt" Text="" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
@@ -48,15 +44,16 @@
         <div class="recover">
             <a href="PasswordRecoveryPage.aspx">Forgot Password?</a>
         </div>
-        <asp:Button Text="Login" runat="server" OnClick="Unnamed_Click"
-            CssClass="button" />
+        <asp:Button Text="Login" runat="server" OnClick="Unnamed_Click" CssClass="button" />
+        <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red" Visible="false"></asp:Label>
      <div class="member">
            Not a member? <a href="RegisterPage.aspx">Register Now</a>   
      </div>
 </div>
-</form>
+
    </div>
     <uc1:Footer runat="server" ID="Footer" />
+        </form>
      <script>
 
  const menuButton = document.querySelector(".menu-toggle");

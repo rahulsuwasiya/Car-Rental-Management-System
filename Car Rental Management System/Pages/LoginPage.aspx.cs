@@ -18,12 +18,6 @@ namespace Car_Rental_Management_System.Pages
         MySqlDataReader dr;
         protected void Page_Load(object sender, EventArgs e)
         {
-                   
-            
-        }
-
-        protected void Unnamed_Click(object sender, EventArgs e)
-        {
             if (Session["UserName"] != null)
             {
                 BtnLogin.Visible = false;
@@ -37,6 +31,12 @@ namespace Car_Rental_Management_System.Pages
             {
 
             }
+
+        }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+           
 
             try {
                  string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;

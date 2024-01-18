@@ -4,12 +4,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    
     <title>Dashboard Design</title>
     <link href="RentalsPage.css" rel="stylesheet" />
     <link href="../StyleSheets/Style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
+  <form runat="server" >  
+    
  <div class="sidebar">
         <div class="logo"></div>
         <ul class="menu">
@@ -36,14 +39,18 @@
                     <i class="fa-solid fa-users"></i>
                     <span>Customer Section</span>
                 </a>
-            </li>
-        
-            <li class="logout">
-                <a href="../index.aspx">
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                    <span>Logout</span>
-                </a>
-            </li>
+                     </li>
+
+           
+    <li class="logout">
+               <a runat="server" onserverclick="Unnamed_ServerClick">
+                   <i class="fa-solid fa-right-from-bracket"></i>
+                   <span>Logout</span>
+               </a>
+           </li>
+
+           
+                
         </ul>
     </div>
     <div class="main--content">
@@ -52,10 +59,9 @@
                 <h2>Dashboard</h2>
             </div>
             <div class="user--info">
-                <h4>Rahul</h4>
+                <h4><asp:Label Text="" ID="lblAdmin" runat="server" /></h4>
                 <img src="Rahul.jpg" alt="" />
             </div>
-
 
         </div>
         <div class="card--container">
@@ -92,7 +98,7 @@
                         </div>
                         <i class="fa-solid fa-money-bill icon dark-green"></i>
                     </div>
-                    
+                   
                 </div>
                 <div class="payment--card light-blue">
                     <div class="card--header">
@@ -107,6 +113,7 @@
                 </div>
             </div>
         </div>
+       
         <div class="tabular--wrapper">
             <h3 class="main--title">Recent Transaction</h3>
             <div class="table-container">
@@ -204,5 +211,8 @@
             </div>
         </div>
     </div>
+   
+   </form> 
+
 </body>
 </html>

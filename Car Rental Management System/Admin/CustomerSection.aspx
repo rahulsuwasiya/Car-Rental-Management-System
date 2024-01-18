@@ -4,12 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+  
     <title></title>
      <link href="RentalsPage.css" rel="stylesheet" />
     <link href="../StyleSheets/Style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
+    <form runat="server">
     <div class="sidebar">
        <div class="logo"></div>
        <ul class="menu">
@@ -39,11 +41,11 @@
            </li>
        
            <li class="logout">
-               <a href="../index.aspx">
-                   <i class="fa-solid fa-right-from-bracket"></i>
-                   <span>Logout</span>
-               </a>
-           </li>
+            <a runat="server" onserverclick="Unnamed_ServerClick">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </li>
        </ul>
    </div>
    <div class="main--content">
@@ -52,7 +54,7 @@
                <h2>Dashboard</h2>
            </div>
            <div class="user--info">
-               <h4>Rahul</h4>
+               <h4><asp:Label Text="" ID="lblAdmin" runat="server" /></h4>
                <img src="Rahul.jpg" alt="" />
            </div>
 
@@ -156,5 +158,6 @@
            </div>
        </div>
    </div>
+        </form>
 </body>
 </html>

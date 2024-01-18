@@ -250,7 +250,7 @@
           <asp:Label ID="Label1" Text='<%# Eval("CarCategory") %>' runat="server" />
       </div>
       <div class="price">
-          &#8377<p><asp:Literal runat="server" ID="litPrice" Text='<%# Eval("PricePerKm") %>'></asp:Literal></p><div>/day</div>
+          &#8377<p><asp:Literal runat="server" ID="litPrice" Text='<%# Eval("PricePerDay") %>'></asp:Literal></p><div>/day</div>
 
       </div>
       <div class="car-image">
