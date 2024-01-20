@@ -51,6 +51,10 @@
                 box-shadow: var(--box-shadow);
             }
 
+            input#BtnSubscribe {
+                color: var(--background);
+            }
+
             .email-box input {
                 width: 100%;
                 padding: 10px;
@@ -130,3 +134,6 @@
         }
     }
 }
+
+
+

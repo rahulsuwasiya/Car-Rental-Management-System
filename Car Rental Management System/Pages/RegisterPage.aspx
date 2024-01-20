@@ -46,14 +46,15 @@
 
  <div class="wrapper">
      <h1>Sign Up</h1>
-         <asp:TextBox runat="server" Text="" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
-         <asp:TextBox runat="server" Text="" placeholder="Name" TextMode="SingleLine" CssClass="text-name" />
-         <asp:TextBox runat="server" Text="" placeholder="Password" TextMode="Password" CssClass="text-name" />
-         <asp:TextBox runat="server" Text="" placeholder="Re-Enter Password" TextMode="Password" CssClass="text-name" />
+         <asp:TextBox runat="server" ID="txtUname" Text="" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
+         <asp:TextBox runat="server" ID="txtName" Text="" placeholder="Name" TextMode="SingleLine" CssClass="text-name" />
+         <asp:TextBox runat="server" ID="txtPass" Text="" placeholder="Password" TextMode="Password" CssClass="text-name" />
+         <asp:TextBox runat="server" ID="txtCnfPass" Text="" placeholder="Re-Enter Password" TextMode="Password" CssClass="text-name" />
      <div class="terms">
-         <asp:CheckBox CssClass="terms-input" Text="I agree to these <a href='#'> Terms & Conditions</a>" runat="server" />
+         <asp:CheckBox CssClass="terms-input" ID="chbTandC" Text="I agree to these <a href='#'> Terms & Conditions</a>" runat="server" />
      </div>
-     <asp:Button Text="Sign Up" runat="server" CssClass="button" />
+     <asp:Button Text="Sign Up" ID="BtnSign" runat="server" CssClass="button" OnClick="BtnSign_Click" />
+     <asp:Label Text="" visible="false" ID="lblErrorMessage" runat="server" />
      <div class="member">
          Already a member?  <a href="LoginPage.aspx">Login Here</a>     
      </div>

@@ -63,99 +63,16 @@
        </div>
        
        <div class="tabular--wrapper">
-           <h3 class="main--title">Recent Transaction</h3>
+           <h3 class="main--title">All Cars</h3>
            <div class="table-container">
-               <table>
-                   <thead>
-                       <tr>
-                           <th>Transaction Date</th>
-                           <th>Customer</th>
-                           <th>Car</th>
-                           <th>Rent</th>
-                           <th>Return</th>
-                           <th>Total</th>
-                           <th>Status</th>
-                       </tr>
-                   </thead>
-                   <tbody>
-                       <tr>
-                           <td>
-                               01/01/2024
-                           </td>
-                           <td>
-                               Rahul S
-                           </td>
-                           <td>
-                              Fortuner
-                           </td>
-                           <td>
-                               01/01/2024
-                           </td>
-                           <td>
-                               07/01/2024
-                           </td>
-                           <td>
-                              Rs.8000/-
-                           </td>
-                           <td>
-                               Pending
-                           </td>
-                       </tr>
-                       <tr>
-                           <td>
-                               01/01/2024
-                           </td>
-                           <td>
-                               Rahul S
-                           </td>
-                           <td>
-                              Fortuner
-                           </td>
-                           <td>
-                               01/01/2024
-                           </td>
-                           <td>
-                               07/01/2024
-                           </td>
-                           <td>
-                              Rs.8000/-
-                           </td>
-                           <td>
-                               Pending
-                           </td>
-                       </tr>
-                       
-                       <tr>
-                           <td>
-                               01/01/2024
-                           </td>
-                           <td>
-                               Rahul S
-                           </td>
-                           <td>
-                              Fortuner
-                           </td>
-                           <td>
-                               01/01/2024
-                           </td>
-                           <td>
-                               07/01/2024
-                           </td>
-                           <td>
-                              Rs.8000/-
-                           </td>
-                           <td>
-                               Pending
-                           </td>
-                       </tr>
-                   </tbody>
-                   <tfoot>
-                       <tr>
-                           <td colspan="7">Total:$1000</td>
-                       </tr>
-                   </tfoot>
-
-               </table>
+                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" >
+                 <Columns>
+                    <asp:BoundField DataField="C_Id" HeaderText="Car ID" SortExpression="ID" />
+                    <asp:BoundField DataField="CarName" HeaderText="Car Name" SortExpression="Name" />
+                    <asp:BoundField DataField="CarCategory" HeaderText="Car Category" SortExpression="Name" />
+                    <asp:BoundField DataField="PricePerDay" HeaderText="Price Per Day" SortExpression="Name" />     
+                </Columns>
+                </asp:GridView>
            </div>
        </div>
    </div>

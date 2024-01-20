@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Car_Rental_Management_System.Pages
+namespace Car_Rental_Management_System.Admin
 {
 
 
-    public partial class PasswordRecoveryPage
+    public partial class AdminPassRecovery
     {
 
         /// <summary>
@@ -22,33 +22,6 @@ namespace Car_Rental_Management_System.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// BtnLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton BtnLogin;
-
-        /// <summary>
-        /// BtnLogout control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton BtnLogout;
-
-        /// <summary>
-        /// BtnSignUp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton BtnSignUp;
 
         /// <summary>
         /// lblUser control.

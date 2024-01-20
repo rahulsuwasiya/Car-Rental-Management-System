@@ -1,15 +1,21 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace Car_Rental_Management_System.Pages
 {
     public partial class PasswordRecoveryPage : System.Web.UI.Page
     {
+        MySqlConnection con;
+        MySqlCommand cmd;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["UserName"] != null)
@@ -49,6 +55,30 @@ namespace Car_Rental_Management_System.Pages
         protected void BtnSignUp_ServerClick(object sender, EventArgs e)
         {
             Response.Redirect("../Pages/RegisterPage.aspx");
+        }
+
+        protected void PassReset_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+                con = new MySqlConnection(connectionString);
+                cmd = new MySqlCommand();
+                con.Open();
+                cmd.Connection = con;
+                cmd.CommandText = "UPDATE tblUser SET Password = @NewPassword WHERE Username=@Username";
+                cmd.Parameters.AddWithValue("@NewPassword", txtNewPass.Text);
+                cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
+                cmd.ExecuteNonQuery();
+                Response.Write("<script>alert('Password Updated Successfully..');window.location = 'LoginPage.aspx';</script>");
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            con.Close();
         }
     }
 }

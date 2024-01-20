@@ -124,6 +124,7 @@
     <Content Include="Admin\AdminLogin.min.css">
       <DependentUpon>AdminLogin.css</DependentUpon>
     </Content>
+    <Content Include="Admin\AdminPassRecovery.aspx" />
     <Content Include="Admin\CarSectionPage.aspx" />
     <Content Include="Admin\CustomerSection.aspx" />
     <Content Include="Admin\RentalsPage.aspx" />
@@ -228,6 +229,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminPassRecovery.aspx.cs">
+      <DependentUpon>AdminPassRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPassRecovery.aspx.designer.cs">
+      <DependentUpon>AdminPassRecovery.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\CarSectionPage.aspx.cs">
       <DependentUpon>CarSectionPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

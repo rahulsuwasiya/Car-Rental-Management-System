@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -10,6 +12,7 @@ namespace Car_Rental_Management_System.Pages
 {
     public partial class TestimonialPage : System.Web.UI.Page
     {
+    
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["UserName"] != null)
@@ -25,6 +28,10 @@ namespace Car_Rental_Management_System.Pages
             {
 
             }
+
+            
+
+
         }
 
         protected void BtnLogin_ServerClick(object sender, EventArgs e)

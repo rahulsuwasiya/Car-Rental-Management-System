@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminLogin.aspx.cs" Inherits="Car_Rental_Management_System.Component.AdminLogin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminPassRecovery.aspx.cs" Inherits="Car_Rental_Management_System.Admin.AdminPassRecovery" %>
+
 <%@ Register Src="~/Component/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
 
 
@@ -7,14 +8,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="AdminLogin.css" rel="stylesheet" />
-    <link href="../StyleSheets/Style.css" rel="stylesheet" />
-    <link href="../StyleSheets/Navbar.css" rel="stylesheet" />
-    <link href="../Component/Footer.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+<link href="AdminLogin.css" rel="stylesheet" />
+<link href="../StyleSheets/Style.css" rel="stylesheet" />
+<link href="../StyleSheets/Navbar.css" rel="stylesheet" />
+<link href="../Component/Footer.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
-            <form id="form1" runat="server">
+               <form id="form1" runat="server">
     <div class="navigation-bar">
     <div class="head-title">Prime<span>Cars</span></div>
     <ul class="nav-item">
@@ -35,21 +37,20 @@
     </div>
    <div class="menu-toggle" onclick="toggleMenu()"></div>
 </div>
-   <div class="login-container">
-        
+   <div class="login-container"> 
+
 <div class="wrapper">
-     <h1>Login</h1>
-        <asp:TextBox runat="server" ID="Unametxt" Text="" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
-        <asp:TextBox runat="server" ID="Passtxt" Text="" placeholder="Password" TextMode="Password" CssClass="text-name" />   
-        <div class="recover">
-            <a href="AdminPassRecovery.aspx">Forgot Password?</a>
-        </div>
-        <asp:Button Text="Login" runat="server" OnClick="Unnamed_Click" CssClass="button" />
-        <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red" Visible="false"></asp:Label>
-     
+    <h1>Forgot Password?</h1>
+         <asp:TextBox runat="server" Text="" ID="txtUsername" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
+         <asp:TextBox runat="server" Text="" ID="txtNewPass" placeholder="New Password" TextMode="Password" CssClass="text-name" /> 
+         <asp:TextBox runat="server" Text="" placeholder="Re-Enter Password" TextMode="Password" CssClass="text-name" />   
+         <asp:Button Text="Submit" runat="server" ID="PassReset" OnClick="PassReset_Click" CssClass="button" />
+    <div class="member">
+         Back to  <a href="AdminLogin.aspx">Login</a> 
+    </div>
 </div>
 
-   </div>
+</div>
     <uc1:Footer runat="server" ID="Footer" />
         </form>
      <script>

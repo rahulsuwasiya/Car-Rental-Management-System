@@ -44,10 +44,10 @@
  
  <div class="wrapper">
      <h1>Forgot Password?</h1>
-          <asp:TextBox runat="server" Text="" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
-          <asp:TextBox runat="server" Text="" placeholder="New Password" TextMode="Password" CssClass="text-name" /> 
+          <asp:TextBox runat="server" Text="" ID="txtUsername" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
+          <asp:TextBox runat="server" Text="" ID="txtNewPass" placeholder="New Password" TextMode="Password" CssClass="text-name" /> 
           <asp:TextBox runat="server" Text="" placeholder="Re-Enter Password" TextMode="Password" CssClass="text-name" />   
-          <asp:Button Text="Submit" runat="server" CssClass="button" />
+          <asp:Button Text="Submit" runat="server" ID="PassReset" OnClick="PassReset_Click" CssClass="button" />
      <div class="member">
           Back to  <a href="LoginPage.aspx">Login</a> 
      </div>

@@ -46,6 +46,9 @@
   background: var(--background-variant);
   box-shadow: var(--box-shadow);
 }
+.update-page .container .box input#BtnSubscribe {
+  color: var(--background);
+}
 .update-page .container .box .email-box input {
   width: 100%;
   padding: 10px;

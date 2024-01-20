@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -18,6 +20,20 @@ namespace Car_Rental_Management_System.Admin
             else
             {
 
+            }
+            if (!IsPostBack)
+            {
+                string connectionString = "Server=localhost;Database=carrental;User=root;Password=;";
+                MySqlConnection connection = new MySqlConnection(connectionString);
+                DataTable dt = new DataTable();
+                string query = "SELECT * FROM tblCar";
+                MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
+                // Fill DataTable with data from the database
+                adapter.Fill(dt);
+
+                // Bind DataTable to GridView
+                GridView1.DataSource = dt;
+                GridView1.DataBind();
             }
         }
 

@@ -58,18 +58,20 @@
                 Stay in the loop with PrimeCars! Subscribe now to receive all the latest updates, promotions, and news straight to your inbox. Your journey starts with the latest information at your fingertips!
              </div>
              <div class="email-box">
-                 <asp:TextBox TextMode="SingleLine" runat="server" placeholder="enter your email"></asp:TextBox>
+                 <asp:TextBox TextMode="SingleLine" ID="txtEmail" runat="server" placeholder="enter your email"></asp:TextBox>
                  <div class="outer-button">
-                     <div class="inner-button">
-                         Subscribe
-                     </div>
+                     
+                         
+                                   <button runat="server"  visible="true" id="BtnSubscribe" class="inner-button" onserverclick="BtnSubscribe_ServerClick" >
+    Subscribe 
+</button>
+                     
                  </div>
              </div>
          </div>
 
-     </div>
-
- </div>
+</div>
+  </div>
 
  </form>
     <uc1:Footer runat="server" ID="Footer" />
