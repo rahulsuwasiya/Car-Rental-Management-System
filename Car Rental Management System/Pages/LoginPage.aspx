@@ -35,7 +35,7 @@
                 <button runat="server"  visible="false" id="BtnLogout" class="box login-bar" onserverclick="BtnLogout_ServerClick" >
     Logout <i class="fa-solid fa-right-to-bracket"></i>
 </button>
- <button runat="server"  visible="true" id="BtnSignUp" class="box signup-bar" onserverclick="BtnSignUp_ServerClick" >
+ <button runat="server"  visible="true" id="BtnSignUp" class="box signup-bar" onserverclick="BtnSignUp_ServerClick"  >
      Sign Up <i class="fa-solid fa-user-plus"></i>
  </button>
         <asp:Label Text="" visible="false" ID="lblUser" runat="server" />
@@ -47,7 +47,9 @@
 <div class="wrapper">
      <h1>Login</h1>
         <asp:TextBox runat="server" ID="Unametxt" Text="" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
-        <asp:TextBox runat="server" ID="Passtxt" Text="" placeholder="Password" TextMode="Password" CssClass="text-name" />   
+        <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="Unametxt" runat="server" />
+        <asp:TextBox runat="server" ID="Passtxt" Text="" placeholder="Password" TextMode="Password" CssClass="text-name" /> 
+        <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="Passtxt" runat="server" />
         <div class="recover">
             <a href="PasswordRecoveryPage.aspx">Forgot Password?</a>
         </div>

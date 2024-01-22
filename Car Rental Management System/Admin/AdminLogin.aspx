@@ -40,7 +40,9 @@
 <div class="wrapper">
      <h1>Login</h1>
         <asp:TextBox runat="server" ID="Unametxt" Text="" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
-        <asp:TextBox runat="server" ID="Passtxt" Text="" placeholder="Password" TextMode="Password" CssClass="text-name" />   
+        <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="Unametxt" runat="server" />
+        <asp:TextBox runat="server" ID="Passtxt" Text="" placeholder="Password" TextMode="Password" CssClass="text-name" />
+       <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="Passtxt" runat="server" />
         <div class="recover">
             <a href="AdminPassRecovery.aspx">Forgot Password?</a>
         </div>

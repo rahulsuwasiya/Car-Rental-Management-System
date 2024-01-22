@@ -47,11 +47,19 @@
  <div class="wrapper">
      <h1>Sign Up</h1>
          <asp:TextBox runat="server" ID="txtUname" Text="" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
+         <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtUname" runat="server" />
          <asp:TextBox runat="server" ID="txtName" Text="" placeholder="Name" TextMode="SingleLine" CssClass="text-name" />
+         <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtName" runat="server" />
          <asp:TextBox runat="server" ID="txtPass" Text="" placeholder="Password" TextMode="Password" CssClass="text-name" />
+         <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtPass" runat="server" />
          <asp:TextBox runat="server" ID="txtCnfPass" Text="" placeholder="Re-Enter Password" TextMode="Password" CssClass="text-name" />
+         <asp:CompareValidator  runat="server" ControlToCompare="txtCnfPass"   
+                ControlToValidate="txtPass" Display="Static" ErrorMessage="*" Font-Size="X-Large" ForeColor="Red"   
+                Operator="Equal" Type="String"></asp:CompareValidator> 
      <div class="terms">
          <asp:CheckBox CssClass="terms-input" ID="chbTandC" Text="I agree to these <a href='#'> Terms & Conditions</a>" runat="server" />
+         <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ClientValidationFunction = "ValidateCheckBox"></asp:CustomValidator><br />
+         
      </div>
      <asp:Button Text="Sign Up" ID="BtnSign" runat="server" CssClass="button" OnClick="BtnSign_Click" />
      <asp:Label Text="" visible="false" ID="lblErrorMessage" runat="server" />
@@ -63,6 +71,15 @@
      </div>
     <uc1:Footer runat="server" ID="Footer" />
            </form>
+    <script type = "text/javascript">
+        function ValidateCheckBox(sender, args) {
+            if (document.getElementById("<%=chbTandC.ClientID %>").checked == true) {
+                args.IsValid = true;
+            } else {
+                args.IsValid = false;
+            }
+        }
+    </script>
      <script>
 
  const menuButton = document.querySelector(".menu-toggle");
