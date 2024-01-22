@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Web;
@@ -16,6 +17,8 @@ namespace Car_Rental_Management_System.Pages
         MySqlConnection con;
         MySqlCommand cmd;
         MySqlDataReader dr;
+        
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["UserName"] != null)
@@ -25,6 +28,7 @@ namespace Car_Rental_Management_System.Pages
                 BtnSignUp.Visible = false;
                 lblUser.Text= "Hii, "+Session["UserName"].ToString();
                 lblUser.Visible = true;
+                
 
             }
             else
@@ -78,5 +82,30 @@ namespace Car_Rental_Management_System.Pages
         {
             Response.Redirect("../Pages/RegisterPage.aspx");
         }
+
+
+        
+
+
+        protected void BtnRent_Click(object sender, EventArgs e)
+        {
+            Button btn=(Button)sender;
+            RepeaterItem item=(RepeaterItem)btn.NamingContainer;
+            string CarName= ((Label)item.FindControl("lblName")).Text;
+            string CarCategory = ((Label)item.FindControl("lblCategory")).Text;
+            string CarPrice = ((Literal)item.FindControl("lblPrice")).Text;
+            string CarImage = ((Image)item.FindControl("imgCar")).ImageUrl;
+
+            Session["CarName"] = CarName;
+            Session["CarCategory"] = CarCategory;
+            Session["CarPrice"] = CarPrice;
+            Session["CarImage"] = CarImage;
+            Response.Redirect("../Pages/CardPage.aspx");
+
+
+
+        }
+       
+
     }
 }

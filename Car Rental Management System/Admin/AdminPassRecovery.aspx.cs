@@ -14,7 +14,7 @@ namespace Car_Rental_Management_System.Admin
 
         MySqlConnection con;
         MySqlCommand cmd;
-        MySqlDataReader dr;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["UserName"] != null)

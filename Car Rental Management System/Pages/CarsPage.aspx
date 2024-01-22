@@ -240,21 +240,22 @@
 
         <div class="car-item-box">
 
-          
             <asp:Repeater ID="reptProduct" runat="server">
-                <ItemTemplate>  <div class="car-item">
+                <ItemTemplate> 
+                     
+                    <div class="car-item">
       <div class="car-name">
           <asp:Label ID="lblName" Text='<%# Eval("CarName") %>' runat="server" />
       </div>
       <div class="car-body-category">
-          <asp:Label ID="Label1" Text='<%# Eval("CarCategory") %>' runat="server" />
+          <asp:Label ID="lblCategory" Text='<%# Eval("CarCategory") %>' runat="server" />
       </div>
       <div class="price">
-          &#8377<p><asp:Literal runat="server" ID="litPrice" Text='<%# Eval("PricePerDay") %>'></asp:Literal></p><div>/day</div>
+          &#8377<p><asp:Literal runat="server" ID="lblPrice" Text='<%# Eval("PricePerDay") %>'></asp:Literal></p><div>/day</div>
 
       </div>
       <div class="car-image">
-          <asp:Image ID="productImage" ImageUrl='<%# Eval("CarImage") %>' runat="server" />
+          <asp:Image ID="imgCar" ImageUrl='<%# Eval("CarImage") %>' runat="server" />
       </div>
       <div class="bottom-content">
           <div class="car-feature">
@@ -271,11 +272,12 @@
                   <span>30 MPG</span>
               </div>
           </div>
-          <div class="rent-button">
-              rent now!<i class="fa-solid fa-right-long"></i>
-          </div>
+          
+          <asp:Button Text="Rent Now!" ID="BtnRent" runat="server" OnClick="BtnRent_Click" CssClass="rent-button"/>
       </div>
-  </div></ItemTemplate>
+  </div>
+                   
+                </ItemTemplate>
             </asp:Repeater>
            
 

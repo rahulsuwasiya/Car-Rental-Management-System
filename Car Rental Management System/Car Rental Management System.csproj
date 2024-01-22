@@ -125,6 +125,10 @@
       <DependentUpon>AdminLogin.css</DependentUpon>
     </Content>
     <Content Include="Admin\AdminPassRecovery.aspx" />
+    <Content Include="Pages\CardPage.aspx" />
+    <Content Include="StyleSheets\CardPage.css">
+      <DependentUpon>CardPage.scss</DependentUpon>
+    </Content>
     <Content Include="Admin\CarSectionPage.aspx" />
     <Content Include="Admin\CustomerSection.aspx" />
     <Content Include="Admin\RentalsPage.aspx" />
@@ -160,6 +164,9 @@
     <Content Include="Pages\TestimonialsPage.aspx" />
     <Content Include="Pages\UpdatePage.aspx" />
     <Content Include="Scripts\Script.js" />
+    <Content Include="StyleSheets\CardPage.min.css">
+      <DependentUpon>CardPage.css</DependentUpon>
+    </Content>
     <Content Include="StyleSheets\CarsPage.css">
       <DependentUpon>CarsPage.scss</DependentUpon>
     </Content>
@@ -235,6 +242,13 @@
     </Compile>
     <Compile Include="Admin\AdminPassRecovery.aspx.designer.cs">
       <DependentUpon>AdminPassRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CardPage.aspx.cs">
+      <DependentUpon>CardPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CardPage.aspx.designer.cs">
+      <DependentUpon>CardPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\CarSectionPage.aspx.cs">
       <DependentUpon>CarSectionPage.aspx</DependentUpon>
@@ -353,6 +367,7 @@
   <ItemGroup>
     <Content Include="Admin\RentalsPage.scss" />
     <Content Include="Admin\AdminLogin.scss" />
+    <Content Include="StyleSheets\CardPage.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

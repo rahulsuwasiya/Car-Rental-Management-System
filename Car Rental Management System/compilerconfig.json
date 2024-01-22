@@ -61,5 +61,13 @@
   {
     "outputFile": "Admin/RentalsPage.css",
     "inputFile": "Admin/RentalsPage.scss"
+  },
+  {
+    "outputFile": "Admin/CardPage.css",
+    "inputFile": "Admin/CardPage.scss"
+  },
+  {
+    "outputFile": "StyleSheets/CardPage.css",
+    "inputFile": "StyleSheets/CardPage.scss"
   }
 ]
