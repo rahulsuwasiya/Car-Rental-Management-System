@@ -60,16 +60,16 @@
 
                 <div class="left-box">
                     <div class="circle-profile">
-                        <img src="#" alt="" />
+                        <img src="../Images/User1.jpg" />
                     </div>
                     <div class="circle-profile">
-                        <img src="#" alt=""/>
+                        <img src="../Images/User2.jpeg" />
                     </div>
                     <div class="circle-profile">
-                        <img src="#" alt=""/>
+                        <img src="../Images/User3.jpeg" />
                     </div>
                     <div class="circle-profile">
-                        <img src="#" alt="" />
+                        <img src="../Images/User4.jpeg" />
                     </div>
                     <div class="circle-profile">
                         9k+

@@ -100,6 +100,28 @@ namespace Car_Rental_Management_System.Pages
             Session["CarCategory"] = CarCategory;
             Session["CarPrice"] = CarPrice;
             Session["CarImage"] = CarImage;
+            try
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+                con = new MySqlConnection(connectionString);
+                cmd = new MySqlCommand();
+                con.Open();
+                cmd.Connection = con;
+                cmd.CommandText = "SELECT CarInfo FROM tblCar where CarName='" + CarName + "'";
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {          
+                    string carInfo = dr["CarInfo"].ToString();
+                    Session["CarInfo"] = carInfo;
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            con.Close();
+           
             Response.Redirect("../Pages/CardPage.aspx");
 
 

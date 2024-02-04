@@ -48,8 +48,8 @@
      <h1>Sign Up</h1>
          <asp:TextBox runat="server" ID="txtUname" Text="" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
          <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtUname" runat="server" />
-         <asp:TextBox runat="server" ID="txtName" Text="" placeholder="Name" TextMode="SingleLine" CssClass="text-name" />
-         <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtName" runat="server" />
+         <asp:TextBox runat="server" ID="txtEmail" Text="" placeholder="Email" TextMode="SingleLine" CssClass="text-name" />
+         <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtEmail" runat="server" />
          <asp:TextBox runat="server" ID="txtPass" Text="" placeholder="Password" TextMode="Password" CssClass="text-name" />
          <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtPass" runat="server" />
          <asp:TextBox runat="server" ID="txtCnfPass" Text="" placeholder="Re-Enter Password" TextMode="Password" CssClass="text-name" />
@@ -62,7 +62,7 @@
          
      </div>
      <asp:Button Text="Sign Up" ID="BtnSign" runat="server" CssClass="button" OnClick="BtnSign_Click" />
-     <asp:Label Text="" visible="false" ID="lblErrorMessage" runat="server" />
+     <asp:Label Text="" visible="false" ID="lblErrorMessage" runat="server" ForeColor="Red" />
      <div class="member">
          Already a member?  <a href="LoginPage.aspx">Login Here</a>     
      </div>

@@ -2,12 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace Car_Rental_Management_System.Pages
 {
@@ -59,18 +61,22 @@ namespace Car_Rental_Management_System.Pages
 
         protected void BtnSign_Click(object sender, EventArgs e)
         {
-            try
+            
+            string email = txtEmail.Text;
+            
+            if (!IsEmailRegistered(email))
             {
+                // Email is not registered, proceed with insertion
                 string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
                 con = new MySqlConnection(connectionString);
                 cmd = new MySqlCommand();
                 con.Open();
                 cmd.Connection = con;
-                cmd.CommandText = "INSERT INTO tblUser (Username,Name, Password,CnfPassword,T_and_C) VALUES (@Username,@Name, @Password,@CnfPassword,@T_and_C)";
+                cmd.CommandText = "INSERT INTO tblUser (Username,Email, Password,T_and_C) VALUES (@Username,@Email, @Password,@T_and_C)";
                 cmd.Parameters.AddWithValue("@Username", txtUname.Text);
-                cmd.Parameters.AddWithValue("@Name", txtName.Text);
+                cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("@Password", txtPass.Text);
-                cmd.Parameters.AddWithValue("@CnfPassword", txtCnfPass.Text);
+               
 
                 if (chbTandC.Checked)
                 {
@@ -80,10 +86,10 @@ namespace Car_Rental_Management_System.Pages
                 {
                     cmd.Parameters.AddWithValue("@T_and_C", "No");
                 }
-                
+
 
                 int rowsAffected = cmd.ExecuteNonQuery();
-                
+
                 if (rowsAffected > 0)
                 {
                     // Insert successful
@@ -97,13 +103,35 @@ namespace Car_Rental_Management_System.Pages
                     lblErrorMessage.Text = "Failed to register the user.";
                     lblErrorMessage.Visible = true;
                 }
-
             }
-            catch (Exception ex)
+            else
             {
-                Console.WriteLine(ex.Message);
+                // Email is already registered, show error message
+                lblErrorMessage.Text = "Email is already registered!";
+                lblErrorMessage.Visible = true;
             }
-            con.Close();
         }
+
+        private bool IsEmailRegistered(string email)
+        {
+            // Replace with your database connection string
+            
+            string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+            con = new MySqlConnection(connectionString);
+            cmd = new MySqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = "SELECT COUNT(*) FROM tblUser WHERE Email = @Email";
+            cmd.Parameters.AddWithValue("@Email", email);
+            
+            object result = cmd.ExecuteScalar();
+            int count = (result == DBNull.Value) ? 0 : Convert.ToInt32(result);
+            return count > 0;
+              
+        }
+        
+        
+
+
     }
 }

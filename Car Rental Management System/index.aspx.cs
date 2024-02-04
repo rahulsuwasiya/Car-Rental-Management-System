@@ -59,7 +59,7 @@ namespace Car_Rental_Management_System
 
         protected void Search_ServerClick(object sender, EventArgs e)
         {
-            Response.Redirect("/Pages/CarPage.aspx");
+            Response.Redirect("/Pages/CarsPage.aspx");
         }
     }
 }

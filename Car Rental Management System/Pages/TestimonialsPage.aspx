@@ -57,7 +57,7 @@
                 <div class="profile-box swiper-slide">
                     <div class="top-box">
                         <div class="profile-image">
-                            <img src="?" alt="" />
+                            <img src="../Images/User1.jpg" />
                         </div>
                         <div class="profile-info">
                             <div class="profile-name">
@@ -86,7 +86,7 @@
                 <div class="profile-box swiper-slide">
     <div class="top-box">
         <div class="profile-image">
-            <img src="?" alt="" />
+            <img src="../Images/User4.jpeg" />
         </div>
         <div class="profile-info">
             <div class="profile-name">
@@ -116,7 +116,7 @@
                 <div class="profile-box swiper-slide">
                     <div class="top-box">
                         <div class="profile-image">
-                            <img src="?" alt="" />
+                            <img src="../Images/User3.jpeg" />
                         </div>
                         <div class="profile-info">
                             <div class="profile-name">
@@ -146,7 +146,7 @@
                 <div class="profile-box swiper-slide">
     <div class="top-box">
         <div class="profile-image">
-            <img src="?" alt="" />
+            <img src="../Images/User5.jpeg" />
         </div>
         <div class="profile-info">
             <div class="profile-name">
@@ -175,7 +175,7 @@
                                 <div class="profile-box swiper-slide">
                     <div class="top-box">
                         <div class="profile-image">
-                            <img src="?" alt="" />
+                            <img src="../Images/User6.jpeg" />
                         </div>
                         <div class="profile-info">
                             <div class="profile-name">
@@ -204,7 +204,7 @@
                 <div class="profile-box swiper-slide">
     <div class="top-box">
         <div class="profile-image">
-            <img src="?" alt="" />
+            <img src="../Images/User2.jpeg" />
         </div>
         <div class="profile-info">
             <div class="profile-name">

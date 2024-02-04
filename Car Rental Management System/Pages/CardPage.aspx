@@ -46,15 +46,15 @@
   <div class="card">
     <div class="card__title">
       <div class="icon">
-        <a href="../Pages/CarPage.aspx"><i class="fa fa-arrow-left"></i></a>
+        <a href="../Pages/CarsPage.aspx"><i class="fa fa-arrow-left"></i></a>
       </div>
       
     </div>
     <div class="card__body">
       <div class="half">
         <div class="featured_text">
-          <h1>
-          <asp:Label Text="" ID="CarName" runat="server" /></h1>
+          <h2>
+          <asp:Label Text="" ID="CarName" runat="server" /></h2>
           <p class="sub">
               <asp:Label Text="" ID="CarCategory" runat="server" /></p>
           <p class="price">Rs.<asp:Label Text="" ID="CarPrice" runat="server" />/Day</p>
@@ -65,7 +65,7 @@
       </div>
       <div class="half">
         <div class="description">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatem nam pariatur voluptate perferendis, asperiores aspernatur! Porro similique consequatur, nobis soluta minima, quasi laboriosam hic cupiditate perferendis esse numquam magni.</p>
+          <p><asp:Label ID="lblCarInfo" Text='<%# Eval("CarInfo") %>' runat="server" Font-Italic="true" /></p>
         </div>
         <span class="stock">Select No. of Days</span>
         <div class="reviews">

@@ -125,6 +125,20 @@
       <DependentUpon>AdminLogin.css</DependentUpon>
     </Content>
     <Content Include="Admin\AdminPassRecovery.aspx" />
+    <Content Include="Images\Image1.png" />
+    <Content Include="Images\Image2.png" />
+    <Content Include="Images\Image3.png" />
+    <Content Include="Images\Image4.png" />
+    <Content Include="Images\Image5.png" />
+    <Content Include="Images\Image6.png" />
+    <Content Include="Images\Image7.png" />
+    <Content Include="Images\Image8.png" />
+    <Content Include="Images\User1.jpg" />
+    <Content Include="Images\User2.jpeg" />
+    <Content Include="Images\User3.jpeg" />
+    <Content Include="Images\User4.jpeg" />
+    <Content Include="Images\User5.jpeg" />
+    <Content Include="Images\User6.jpeg" />
     <Content Include="Pages\CardPage.aspx" />
     <Content Include="StyleSheets\CardPage.css">
       <DependentUpon>CardPage.scss</DependentUpon>
@@ -393,7 +407,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Payment\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

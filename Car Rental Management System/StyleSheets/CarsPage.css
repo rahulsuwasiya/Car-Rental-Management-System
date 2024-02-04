@@ -266,8 +266,8 @@
   transition: all 300ms ease 300ms;
 }
 .car-page .car-container .car-item-box .car-item .car-name {
-  font-size: 22px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 18px;
   text-transform: capitalize;
   color: var(--primary);
   font-weight: 800;

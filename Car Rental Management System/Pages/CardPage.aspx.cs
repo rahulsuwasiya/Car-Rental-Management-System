@@ -18,6 +18,7 @@ namespace Car_Rental_Management_System.Admin
             CarCategory.Text = Session["CarCategory"].ToString();
             CarPrice.Text = Session["CarPrice"].ToString();
             CarImage.ImageUrl = Session["CarImage"].ToString();
+            lblCarInfo.Text= Session["CarInfo"].ToString();
 
 
             if (Session["UserName"] != null)
