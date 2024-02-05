@@ -59,6 +59,10 @@
              </div>
              <div class="email-box">
                  <asp:TextBox TextMode="SingleLine" ID="txtEmail" runat="server" placeholder="enter your email"></asp:TextBox>
+                  <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="XX-Large" ForeColor="Red" ControlToValidate="txtEmail" runat="server" />
+ <asp:RegularExpressionValidator ID="EmailFormatValidator" runat="server" ControlToValidate="txtEmail"
+            Display="Dynamic" ErrorMessage="Invalid email format" ForeColor="Red" Font-Size="Small"
+            ValidationExpression="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"></asp:RegularExpressionValidator>
                  <div class="outer-button">
                      
                          

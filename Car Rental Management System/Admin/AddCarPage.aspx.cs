@@ -29,8 +29,8 @@ namespace Car_Rental_Management_System.Admin
                 cmd = new MySqlCommand();
                 con.Open();
                 cmd.Connection = con;
-                cmd.CommandText = "INSERT INTO tblCar (C_Id,CarName,CarCategory,PricePerDay,CarInfo) VALUES (@C_Id,@CarName,@CarCategory,@PricePerDay,@CarInfo)";
-                cmd.Parameters.AddWithValue("@C_Id", txtCarId.Text);
+                cmd.CommandText = "INSERT INTO tblCar (CarName,CarCategory,PricePerDay,CarInfo) VALUES (@CarName,@CarCategory,@PricePerDay,@CarInfo)";
+              
                 cmd.Parameters.AddWithValue("@CarName", txtCarName.Text);
                 cmd.Parameters.AddWithValue("@CarCategory", txtCarCategory.Text);
                 cmd.Parameters.AddWithValue("@PricePerDay", txtPricePerDay.Text);

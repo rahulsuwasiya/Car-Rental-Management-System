@@ -79,12 +79,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:TextBox ID="txtCarId" runat="server"  placeholder="Enter Car ID"></asp:TextBox>
-<asp:RequiredFieldValidator ID="RequiredCarIdValidator" runat="server" ControlToValidate="txtCarId"
-    Display="Dynamic" ForeColor="Red" ErrorMessage="Car ID is required"></asp:RequiredFieldValidator>
-<asp:RegularExpressionValidator ID="NumericValidator" runat="server" ControlToValidate="txtCarId"
-        Display="Dynamic" ForeColor="Red" ErrorMessage="Please enter a valid numeric value" ValidationExpression="^\d+$"
-        CssClass="validation-message"></asp:RegularExpressionValidator>
+            
 
 <asp:TextBox ID="txtCarName" runat="server"  placeholder="Enter Car Name"></asp:TextBox>
 <asp:RequiredFieldValidator ID="RequiredCarNameValidator" runat="server" ControlToValidate="txtCarName"
