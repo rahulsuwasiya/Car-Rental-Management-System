@@ -11,7 +11,7 @@ namespace Car_Rental_Management_System.Admin
 {
 
 
-    public partial class AdminPassRecovery
+    public partial class RemoveCarPage
     {
 
         /// <summary>
@@ -24,66 +24,39 @@ namespace Car_Rental_Management_System.Admin
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblUser control.
+        /// txtCarId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUser;
+        protected global::System.Web.UI.WebControls.TextBox txtCarId;
 
         /// <summary>
-        /// txtUsername control.
+        /// RequiredCarIdValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUsername;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredCarIdValidator;
 
         /// <summary>
-        /// txtNewPass control.
+        /// NumericValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNewPass;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator NumericValidator;
 
         /// <summary>
-        /// PasswordLengthValidator control.
+        /// RemoveCarButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator PasswordLengthValidator;
-
-        /// <summary>
-        /// txtCnfPass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCnfPass;
-
-        /// <summary>
-        /// PassReset control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button PassReset;
-
-        /// <summary>
-        /// Footer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Car_Rental_Management_System.Component.Footer Footer;
+        protected global::System.Web.UI.WebControls.Button RemoveCarButton;
     }
 }

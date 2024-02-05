@@ -44,6 +44,9 @@
          <asp:TextBox runat="server" Text="" ID="txtUsername" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
          <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtUsername" runat="server" />
          <asp:TextBox runat="server" Text="" ID="txtNewPass" placeholder="New Password" TextMode="Password" CssClass="text-name" /> 
+         <asp:RegularExpressionValidator ID="PasswordLengthValidator" runat="server" ControlToValidate="txtNewPass"
+              Display="Dynamic" ErrorMessage="Password must be at least 8 characters long"
+              ValidationExpression="^.{8,}$" ForeColor="Red" Font-Size="Small"></asp:RegularExpressionValidator>
          <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtNewPass" runat="server" />
          <asp:TextBox runat="server" ID="txtCnfPass" Text="" placeholder="Re-Enter Password" TextMode="Password" CssClass="text-name" />
          <asp:CompareValidator  runat="server" ControlToCompare="txtCnfPass"   

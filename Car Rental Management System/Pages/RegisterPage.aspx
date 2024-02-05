@@ -48,10 +48,20 @@
      <h1>Sign Up</h1>
          <asp:TextBox runat="server" ID="txtUname" Text="" placeholder="Username" TextMode="SingleLine" CssClass="text-name" />
          <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtUname" runat="server" />
+         <asp:RegularExpressionValidator ID="UsernameValidator" runat="server"
+    ControlToValidate="txtUname" Display="Dynamic" ForeColor="Red" Font-Size="Small"
+    ErrorMessage="Username must be at least 8 characters long and should not contain any numbers"
+    ValidationExpression="^(?!.*\d).{8,}$"></asp:RegularExpressionValidator>
          <asp:TextBox runat="server" ID="txtEmail" Text="" placeholder="Email" TextMode="SingleLine" CssClass="text-name" />
          <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtEmail" runat="server" />
-         <asp:TextBox runat="server" ID="txtPass" Text="" placeholder="Password" TextMode="Password" CssClass="text-name" />
+         <asp:RegularExpressionValidator ID="EmailFormatValidator" runat="server" ControlToValidate="txtEmail"
+                    Display="Dynamic" ErrorMessage="Invalid email format" ForeColor="Red" Font-Size="Small"
+                    ValidationExpression="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"></asp:RegularExpressionValidator>
+         <asp:TextBox runat="server" ID="txtPass" Text="" placeholder="Password" TextMode="Password" CssClass="text-name"  />
          <asp:RequiredFieldValidator ErrorMessage="*" Font-Size="X-Large" ForeColor="Red" ControlToValidate="txtPass" runat="server" />
+         <asp:RegularExpressionValidator ID="PasswordLengthValidator" runat="server" ControlToValidate="txtPass"
+                Display="Dynamic" ErrorMessage="Password must be at least 8 characters long"
+                ValidationExpression="^.{8,}$" ForeColor="Red" Font-Size="Small"></asp:RegularExpressionValidator>
          <asp:TextBox runat="server" ID="txtCnfPass" Text="" placeholder="Re-Enter Password" TextMode="Password" CssClass="text-name" />
          <asp:CompareValidator  runat="server" ControlToCompare="txtCnfPass"   
                 ControlToValidate="txtPass" Display="Static" ErrorMessage="*" Font-Size="X-Large" ForeColor="Red"   

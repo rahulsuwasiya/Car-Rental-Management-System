@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Car_Rental_Management_System.Pages
+namespace Car_Rental_Management_System.Admin
 {
 
 
-    public partial class RegisterPage
+    public partial class AddCarPage
     {
 
         /// <summary>
@@ -24,147 +24,120 @@ namespace Car_Rental_Management_System.Pages
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// BtnLogin control.
+        /// txtCarId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton BtnLogin;
+        protected global::System.Web.UI.WebControls.TextBox txtCarId;
 
         /// <summary>
-        /// BtnLogout control.
+        /// RequiredCarIdValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton BtnLogout;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredCarIdValidator;
 
         /// <summary>
-        /// BtnSignUp control.
+        /// NumericValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton BtnSignUp;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator NumericValidator;
 
         /// <summary>
-        /// lblUser control.
+        /// txtCarName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUser;
+        protected global::System.Web.UI.WebControls.TextBox txtCarName;
 
         /// <summary>
-        /// txtUname control.
+        /// RequiredCarNameValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUname;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredCarNameValidator;
 
         /// <summary>
-        /// UsernameValidator control.
+        /// txtCarCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator UsernameValidator;
+        protected global::System.Web.UI.WebControls.TextBox txtCarCategory;
 
         /// <summary>
-        /// txtEmail control.
+        /// RequiredCarCategoryValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredCarCategoryValidator;
 
         /// <summary>
-        /// EmailFormatValidator control.
+        /// txtPricePerDay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator EmailFormatValidator;
+        protected global::System.Web.UI.WebControls.TextBox txtPricePerDay;
 
         /// <summary>
-        /// txtPass control.
+        /// RequiredPricePerDayValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPass;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredPricePerDayValidator;
 
         /// <summary>
-        /// PasswordLengthValidator control.
+        /// PriceFormatValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator PasswordLengthValidator;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator PriceFormatValidator;
 
         /// <summary>
-        /// txtCnfPass control.
+        /// txtCarInfo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCnfPass;
+        protected global::System.Web.UI.WebControls.TextBox txtCarInfo;
 
         /// <summary>
-        /// chbTandC control.
+        /// RequiredFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chbTandC;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
 
         /// <summary>
-        /// CustomValidator1 control.
+        /// addCarButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CustomValidator CustomValidator1;
-
-        /// <summary>
-        /// BtnSign control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSign;
-
-        /// <summary>
-        /// lblErrorMessage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblErrorMessage;
-
-        /// <summary>
-        /// Footer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Car_Rental_Management_System.Component.Footer Footer;
+        protected global::System.Web.UI.WebControls.Button addCarButton;
     }
 }

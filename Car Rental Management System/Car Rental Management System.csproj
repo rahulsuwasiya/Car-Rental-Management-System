@@ -118,6 +118,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AddCarPage.aspx" />
     <Content Include="Admin\AdminLogin.css">
       <DependentUpon>AdminLogin.scss</DependentUpon>
     </Content>
@@ -125,6 +126,7 @@
       <DependentUpon>AdminLogin.css</DependentUpon>
     </Content>
     <Content Include="Admin\AdminPassRecovery.aspx" />
+    <Content Include="Admin\RemoveCarPage.aspx" />
     <Content Include="Images\Image1.png" />
     <Content Include="Images\Image2.png" />
     <Content Include="Images\Image3.png" />
@@ -250,12 +252,26 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddCarPage.aspx.cs">
+      <DependentUpon>AddCarPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddCarPage.aspx.designer.cs">
+      <DependentUpon>AddCarPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminPassRecovery.aspx.cs">
       <DependentUpon>AdminPassRecovery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\AdminPassRecovery.aspx.designer.cs">
       <DependentUpon>AdminPassRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RemoveCarPage.aspx.cs">
+      <DependentUpon>RemoveCarPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RemoveCarPage.aspx.designer.cs">
+      <DependentUpon>RemoveCarPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\CardPage.aspx.cs">
       <DependentUpon>CardPage.aspx</DependentUpon>

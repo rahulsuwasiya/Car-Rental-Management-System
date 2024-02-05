@@ -66,8 +66,8 @@ namespace Car_Rental_Management_System.Pages
                 cmd = new MySqlCommand();
                 con.Open();
                 cmd.Connection = con;
-                cmd.CommandText = "UPDATE tblUser SET Password = @NewPassword WHERE Username=@Username";
-                cmd.Parameters.AddWithValue("@NewPassword", txtNewPass.Text);
+                cmd.CommandText = "UPDATE tblUser SET Password = @Password WHERE Username=@Username";
+                cmd.Parameters.AddWithValue("@Password", txtNewPass.Text);
                 cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
                 cmd.ExecuteNonQuery();
                 Response.Write("<script>alert('Password Updated Successfully..');window.location = 'LoginPage.aspx';</script>");

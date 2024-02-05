@@ -45,5 +45,15 @@ namespace Car_Rental_Management_System.Admin
             // Redirect to the logout page or any other page after session destruction
             Response.Redirect("../Admin/AdminLogin.aspx");
         }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Admin/AddCarPage.aspx");
+        }
+
+        protected void Unnamed_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("../Admin/RemoveCarPage.aspx");
+        }
     }
 }

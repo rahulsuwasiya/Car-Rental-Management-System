@@ -39,11 +39,11 @@ h1 {
     width: 90%;
     color: #fff;
     cursor: pointer;
-    background: rgb(17,107,143);
+    background:var(--primary);
 }
 
 .button:hover {
-    background: rgb(255, 0, 0);
+    background:var(--primary-variant);
 }
 
 .text-name:focus {

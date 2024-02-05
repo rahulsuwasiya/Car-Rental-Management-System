@@ -78,6 +78,15 @@ namespace Car_Rental_Management_System.Pages
         protected global::System.Web.UI.WebControls.TextBox txtNewPass;
 
         /// <summary>
+        /// PasswordLengthValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator PasswordLengthValidator;
+
+        /// <summary>
         /// txtCnfPass control.
         /// </summary>
         /// <remarks>
