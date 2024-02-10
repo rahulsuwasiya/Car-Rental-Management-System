@@ -57,5 +57,10 @@ namespace Car_Rental_Management_System.Admin
         {
             Response.Redirect("../Pages/LoginPage.aspx");
         }
+
+        protected void RentBtn_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("../Payment/PaymentPage.aspx");
+        }
     }
 }

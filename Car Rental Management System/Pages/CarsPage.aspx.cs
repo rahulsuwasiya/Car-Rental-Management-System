@@ -94,7 +94,7 @@ namespace Car_Rental_Management_System.Pages
             string CarName= ((Label)item.FindControl("lblName")).Text;
             string CarCategory = ((Label)item.FindControl("lblCategory")).Text;
             string CarPrice = ((Literal)item.FindControl("lblPrice")).Text;
-            string CarImage = ((Image)item.FindControl("imgCar")).ImageUrl;
+            string CarImage = ((Image)item.FindControl("CarImage")).ImageUrl;
 
             Session["CarName"] = CarName;
             Session["CarCategory"] = CarCategory;

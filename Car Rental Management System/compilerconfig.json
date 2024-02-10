@@ -69,5 +69,9 @@
   {
     "outputFile": "StyleSheets/CardPage.css",
     "inputFile": "StyleSheets/CardPage.scss"
+  },
+  {
+    "outputFile": "Payment/PaymentPage.css",
+    "inputFile": "Payment/PaymentPage.scss"
   }
 ]

@@ -99,7 +99,7 @@
 <asp:TextBox ID="txtCarInfo" runat="server"  placeholder="Enter Car information"></asp:TextBox>
 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCarInfo"
     Display="Dynamic" ForeColor="Red" ErrorMessage="Car Information is required"></asp:RequiredFieldValidator>
-
+<asp:FileUpload ID="CarImageUpload" runat="server" />
 
             <br />
 <br />

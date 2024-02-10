@@ -255,7 +255,8 @@
 
       </div>
       <div class="car-image">
-          <asp:Image ID="imgCar" ImageUrl='<%# Eval("CarImage") %>' runat="server" />
+          
+          <asp:Image ID="CarImage" runat="server" ImageUrl='<%# "data:image/png;base64," + Convert.ToBase64String((byte[])Eval("CarImage")) %>' AlternateText="Car Image" />
       </div>
       <div class="bottom-content">
           <div class="car-feature">

@@ -127,6 +127,7 @@
     </Content>
     <Content Include="Admin\AdminPassRecovery.aspx" />
     <Content Include="Admin\RemoveCarPage.aspx" />
+    <Content Include="Images\cards.png" />
     <Content Include="Images\Image1.png" />
     <Content Include="Images\Image2.png" />
     <Content Include="Images\Image3.png" />
@@ -142,6 +143,10 @@
     <Content Include="Images\User5.jpeg" />
     <Content Include="Images\User6.jpeg" />
     <Content Include="Pages\CardPage.aspx" />
+    <Content Include="Payment\PaymentPage.aspx" />
+    <Content Include="Payment\PaymentPage.css">
+      <DependentUpon>PaymentPage.scss</DependentUpon>
+    </Content>
     <Content Include="StyleSheets\CardPage.css">
       <DependentUpon>CardPage.scss</DependentUpon>
     </Content>
@@ -392,6 +397,13 @@
     <Compile Include="Pages\UpdatePage.aspx.designer.cs">
       <DependentUpon>UpdatePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Payment\PaymentPage.aspx.cs">
+      <DependentUpon>PaymentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\PaymentPage.aspx.designer.cs">
+      <DependentUpon>PaymentPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -416,6 +428,7 @@
     <Content Include="StyleSheets\TestimonialPage.scss" />
     <Content Include="StyleSheets\UpdatePage.scss" />
     <Content Include="StyleSheets\Navbar.scss" />
+    <Content Include="Payment\PaymentPage.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -423,9 +436,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Payment\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -29,7 +29,24 @@ namespace Car_Rental_Management_System.Admin
                 cmd = new MySqlCommand();
                 con.Open();
                 cmd.Connection = con;
-                cmd.CommandText = "INSERT INTO tblCar (CarName,CarCategory,PricePerDay,CarInfo) VALUES (@CarName,@CarCategory,@PricePerDay,@CarInfo)";
+
+                // Check if a file is uploaded
+                if (CarImageUpload.HasFile)
+                {
+                    // Read the file content
+                    byte[] fileData = CarImageUpload.FileBytes;
+
+                    // Add the file data to the database
+                    cmd.CommandText = "INSERT INTO tblCar (CarName, CarCategory, PricePerDay, CarInfo, CarImage) VALUES (@CarName, @CarCategory, @PricePerDay, @CarInfo, @CarImage)";
+                    cmd.Parameters.AddWithValue("@CarImage", fileData);
+                }
+                else
+                {
+                    // Handle if no file is uploaded
+                    cmd.CommandText = "INSERT INTO tblCar (CarName, CarCategory, PricePerDay, CarInfo) VALUES (@CarName, @CarCategory, @PricePerDay, @CarInfo)";
+                }
+
+               
               
                 cmd.Parameters.AddWithValue("@CarName", txtCarName.Text);
                 cmd.Parameters.AddWithValue("@CarCategory", txtCarCategory.Text);

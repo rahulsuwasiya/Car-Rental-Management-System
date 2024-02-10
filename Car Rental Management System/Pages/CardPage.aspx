@@ -69,13 +69,33 @@
         </div>
         <span class="stock">Select No. of Days</span>
         <div class="reviews">
-           From Date:<asp:TextBox runat="server"  TextMode="Date"/><br />
-           &nbsp;&nbsp;To Date:&nbsp;&nbsp;&nbsp;<asp:TextBox runat="server"  TextMode="Date"/><br />
-           &nbsp;Location:&nbsp;&nbsp;<asp:DropDownList runat="server">
-                <asp:ListItem Text="Mumbai" />
-                <asp:ListItem Text="Rajasthan" />
+           From Date:<asp:TextBox runat="server" ID="txtFdate" TextMode="Date"/>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+     ControlToValidate="txtfdate" ErrorMessage="*" 
+     ForeColor="Red"></asp:RequiredFieldValidator><br />
+           &nbsp;&nbsp;To Date:&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txtTdate" runat="server"  TextMode="Date"/>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                ControlToValidate="txtTdate" ErrorMessage="*" 
+                ForeColor="Red"></asp:RequiredFieldValidator><br />
+           &nbsp;Location:&nbsp;&nbsp;<asp:DropDownList ID="drpLocation" runat="server">
+                <asp:ListItem Text="Select" />
+                <asp:ListItem Text="Dadar" />
+                <asp:ListItem Text="Kurla" />
+                <asp:ListItem Text="Chembur" />
             </asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+                ControlToValidate="drpLocation" 
+                ErrorMessage="*" ForeColor="Red" 
+                InitialValue="Select"></asp:RequiredFieldValidator>
         </div>
+          <asp:CompareValidator ID="CompareValidatorDates" runat="server" 
+                ControlToValidate="txtTdate" 
+                ControlToCompare="txtFdate" 
+                Operator="GreaterThan" 
+                Type="Date" 
+                ErrorMessage="To Date must be greater than From Date" 
+                Display="Dynamic" 
+                ForeColor="Red"></asp:CompareValidator>
       </div>
     </div>
     <div class="card__footer">
@@ -84,7 +104,7 @@
         <h3>Rahul Suwasiya</h3>
       </div>
       <div class="action">
-        <button type="button">Rent Now</button>
+        <button type="button" id="RentBtn" runat="server" onserverclick="RentBtn_ServerClick">Rent Now</button>
       </div>
     </div>
   </div>
