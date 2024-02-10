@@ -56,7 +56,7 @@
            </div>
            <div class="user--info">
                <h4><asp:Label Text="" ID="lblAdmin" runat="server" /></h4>
-               <img src="Rahul.jpg" alt="" />
+               <img src="../Images/UserIcon.png" />
            </div>
 
 

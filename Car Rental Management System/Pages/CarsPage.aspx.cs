@@ -84,50 +84,57 @@ namespace Car_Rental_Management_System.Pages
         }
 
 
-        
+
 
 
         protected void BtnRent_Click(object sender, EventArgs e)
         {
-            Button btn=(Button)sender;
-            RepeaterItem item=(RepeaterItem)btn.NamingContainer;
-            string CarName= ((Label)item.FindControl("lblName")).Text;
-            string CarCategory = ((Label)item.FindControl("lblCategory")).Text;
-            string CarPrice = ((Literal)item.FindControl("lblPrice")).Text;
-            string CarImage = ((Image)item.FindControl("CarImage")).ImageUrl;
 
-            Session["CarName"] = CarName;
-            Session["CarCategory"] = CarCategory;
-            Session["CarPrice"] = CarPrice;
-            Session["CarImage"] = CarImage;
-            try
+            if (Session["UserName"] != null)
             {
-                string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
-                con = new MySqlConnection(connectionString);
-                cmd = new MySqlCommand();
-                con.Open();
-                cmd.Connection = con;
-                cmd.CommandText = "SELECT CarInfo FROM tblCar where CarName='" + CarName + "'";
-                dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {          
-                    string carInfo = dr["CarInfo"].ToString();
-                    Session["CarInfo"] = carInfo;
+                Button btn = (Button)sender;
+                RepeaterItem item = (RepeaterItem)btn.NamingContainer;
+                string CarName = ((Label)item.FindControl("lblName")).Text;
+                string CarCategory = ((Label)item.FindControl("lblCategory")).Text;
+                string CarPrice = ((Literal)item.FindControl("lblPrice")).Text;
+                string CarImage = ((Image)item.FindControl("CarImage")).ImageUrl;
+
+                Session["CarName"] = CarName;
+                Session["CarCategory"] = CarCategory;
+                Session["CarPrice"] = CarPrice;
+                Session["CarImage"] = CarImage;
+                try
+                {
+                    string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+                    con = new MySqlConnection(connectionString);
+                    cmd = new MySqlCommand();
+                    con.Open();
+                    cmd.Connection = con;
+                    cmd.CommandText = "SELECT CarInfo FROM tblCar where CarName='" + CarName + "'";
+                    dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        string carInfo = dr["CarInfo"].ToString();
+                        Session["CarInfo"] = carInfo;
+                    }
+
                 }
-                
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                con.Close();
+
+                Response.Redirect("../Pages/CardPage.aspx");
+
+
+
             }
-            catch (Exception ex)
+            else
             {
-                Console.WriteLine(ex.Message);
+                Response.Redirect("../Pages/LoginPage.aspx");
             }
-            con.Close();
-           
-            Response.Redirect("../Pages/CardPage.aspx");
-
-
-
         }
-       
 
     }
 }

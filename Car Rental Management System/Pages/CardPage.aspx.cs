@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Google.Protobuf;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -20,7 +22,7 @@ namespace Car_Rental_Management_System.Admin
             CarImage.ImageUrl = Session["CarImage"].ToString();
             lblCarInfo.Text= Session["CarInfo"].ToString();
 
-
+           
             if (Session["UserName"] != null)
             {
                 BtnLogin.Visible = false;
@@ -60,6 +62,21 @@ namespace Car_Rental_Management_System.Admin
 
         protected void RentBtn_ServerClick(object sender, EventArgs e)
         {
+            DateTime Fdate = DateTime.Parse(txtFdate.Text);
+            DateTime Tdate = DateTime.Parse(txtTdate.Text);
+           
+            TimeSpan difference = Tdate - Fdate;
+
+            int Days = difference.Days;
+
+            string carPriceString = Session["CarPrice"].ToString();
+            int PricePerDay = Convert.ToInt32(carPriceString);
+
+            int TotalAmt = Days * PricePerDay;
+            Session["TotalAmt"] = TotalAmt;
+            Session["Fdate"] = Fdate.ToString("dd-MM-yyyy");
+            Session["Tdate"] = Tdate.ToString("dd-MM-yyyy");
+
             Response.Redirect("../Payment/PaymentPage.aspx");
         }
     }

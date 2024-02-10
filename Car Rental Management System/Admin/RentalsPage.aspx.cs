@@ -1,5 +1,11 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -24,6 +30,58 @@ namespace Car_Rental_Management_System.Admin
             {
 
             }
+            int totalEntries=0;
+            string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            if (!IsPostBack)
+            {
+                
+                DataTable dt = new DataTable();
+                string query = "SELECT * FROM tblBooking";
+                MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
+                // Fill DataTable with data from the database
+                adapter.Fill(dt);
+                totalEntries = dt.Rows.Count;
+                // Bind DataTable to GridView
+                GridView1.DataSource = dt;
+                GridView1.DataBind();
+            }
+            lblCompRent.Text=totalEntries.ToString();
+            connection.Open();
+            string q = "SELECT COUNT(*) FROM tblUser";
+            MySqlCommand cmd = new MySqlCommand(q, connection);
+            object result = cmd.ExecuteScalar();
+
+            // Attempt to parse the result to an integer
+            int totalCount;
+            if (result != null && int.TryParse(result.ToString(), out totalCount))
+            {
+                // Output the total count of entries
+                lblCustomers.Text = totalCount.ToString();
+            }
+            string q1 = "SELECT SUM(TotalAmt) FROM tblBooking";
+            cmd = new MySqlCommand(q1, connection);
+            object result1 = cmd.ExecuteScalar();
+
+            // Attempt to parse the result to an integer
+            int totalTransaction;
+            if (result1 != null && int.TryParse(result1.ToString(), out totalTransaction))
+            {
+                // Output the total count of entries
+                lblTransaction.Text = totalTransaction.ToString();
+            }
+            string q2 = "SELECT COUNT(*) FROM tblCar";
+            cmd = new MySqlCommand(q2, connection);
+            object result2 = cmd.ExecuteScalar();
+
+            // Attempt to parse the result to an integer
+            int totalCarCount;
+            if (result2 != null && int.TryParse(result2.ToString(), out totalCarCount))
+            {
+                // Output the total count of entries
+                lblCarCount.Text = totalCarCount.ToString();
+            }
+
         }
 
         protected void Unnamed_ServerClick(object sender, EventArgs e)

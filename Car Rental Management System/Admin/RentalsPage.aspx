@@ -35,7 +35,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="CustomerSection.aspx">
                     <i class="fa-solid fa-users"></i>
                     <span>Customer Section</span>
                 </a>
@@ -60,7 +60,7 @@
             </div>
             <div class="user--info">
                 <h4><asp:Label Text="" ID="lblAdmin" runat="server" /></h4>
-                <img src="Rahul.jpg" alt="" />
+                <img src="../Images/UserIcon.png" />
             </div>
 
         </div>
@@ -71,8 +71,9 @@
                     <div class="card--header">
                         <div class="amount">
                             <span class="title">
-                                Available Cars</span>
-                            <span class="amount--value">12/13</span>
+                                Total Cars</span>
+                            <span class="amount--value">
+                                <asp:Literal Text="" ID="lblCarCount" runat="server" /></span>
                         </div>
                         <i class="fa-solid fa-car icon"></i>
                     </div>
@@ -82,8 +83,9 @@
                     <div class="card--header">
                         <div class="amount">
                             <span class="title">
-                                Customers</span>
-                            <span class="amount--value">24</span>
+                                Users</span>
+                            <span class="amount--value">
+                                <asp:Literal Text="" ID="lblCustomers" runat="server" /></span>
                         </div>
                         <i class="fa-solid fa-users icon dark-purple"></i>
                     </div>
@@ -94,7 +96,7 @@
                         <div class="amount">
                             <span class="title">
                                 Transaction</span>
-                            <span class="amount--value">Rs. 50000/-</span>
+                            <span class="amount--value">Rs.<asp:Literal Text="" ID="lblTransaction" runat="server" />/-</span>
                         </div>
                         <i class="fa-solid fa-money-bill icon dark-green"></i>
                     </div>
@@ -105,7 +107,8 @@
                         <div class="amount">
                             <span class="title">
                                 Completed Rentals</span>
-                            <span class="amount--value">4</span>
+                            <span class="amount--value">
+                                <asp:Literal ID="lblCompRent" Text="" runat="server" /></span>
                         </div>
                         <i class="fa-solid fa-check-double  icon dark-blue"></i>
                     </div>
@@ -117,97 +120,21 @@
         <div class="tabular--wrapper">
             <h3 class="main--title">Recent Transaction</h3>
             <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Transaction Date</th>
-                            <th>Customer</th>
-                            <th>Car</th>
-                            <th>Rent</th>
-                            <th>Return</th>
-                            <th>Total</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                01/01/2024
-                            </td>
-                            <td>
-                                Rahul S
-                            </td>
-                            <td>
-                               Fortuner
-                            </td>
-                            <td>
-                                01/01/2024
-                            </td>
-                            <td>
-                                07/01/2024
-                            </td>
-                            <td>
-                               Rs.8000/-
-                            </td>
-                            <td>
-                                Pending
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                01/01/2024
-                            </td>
-                            <td>
-                                Rahul S
-                            </td>
-                            <td>
-                               Fortuner
-                            </td>
-                            <td>
-                                01/01/2024
-                            </td>
-                            <td>
-                                07/01/2024
-                            </td>
-                            <td>
-                               Rs.8000/-
-                            </td>
-                            <td>
-                                Pending
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>
-                                01/01/2024
-                            </td>
-                            <td>
-                                Rahul S
-                            </td>
-                            <td>
-                               Fortuner
-                            </td>
-                            <td>
-                                01/01/2024
-                            </td>
-                            <td>
-                                07/01/2024
-                            </td>
-                            <td>
-                               Rs.8000/-
-                            </td>
-                            <td>
-                                Pending
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="7">Total:$1000</td>
-                        </tr>
-                    </tfoot>
-
-                </table>
+                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"  >
+                 <Columns>
+                    <asp:BoundField DataField="B_Id" HeaderText="Transaction ID"  />
+                    <asp:BoundField DataField="BookingDate" HeaderText="Transaction Date"  />
+                    <asp:BoundField DataField="Name" HeaderText="Customer Name"  />
+                    <asp:BoundField DataField="Mobile" HeaderText="Mobile No."  />
+                    <asp:BoundField DataField="Email" HeaderText="Email"  />
+                    <asp:BoundField DataField="Address" HeaderText="Address"  />   
+                    <asp:BoundField DataField="CarName" HeaderText="Car Name"  />
+                    <asp:BoundField DataField="PricePerDay" HeaderText="Per Day(Amt)"  />   
+                    <asp:BoundField DataField="FromDate" HeaderText="Rent"  />
+                    <asp:BoundField DataField="ToDate" HeaderText="Return" />
+                    <asp:BoundField DataField="TotalAmt" HeaderText="Total Amt"  />
+                </Columns>
+                </asp:GridView>
             </div>
         </div>
     </div>

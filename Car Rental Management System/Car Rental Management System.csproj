@@ -142,11 +142,13 @@
     <Content Include="Images\User4.jpeg" />
     <Content Include="Images\User5.jpeg" />
     <Content Include="Images\User6.jpeg" />
+    <Content Include="Images\UserIcon.png" />
     <Content Include="Pages\CardPage.aspx" />
     <Content Include="Payment\PaymentPage.aspx" />
     <Content Include="Payment\PaymentPage.css">
       <DependentUpon>PaymentPage.scss</DependentUpon>
     </Content>
+    <Content Include="Payment\SuccessPage.aspx" />
     <Content Include="StyleSheets\CardPage.css">
       <DependentUpon>CardPage.scss</DependentUpon>
     </Content>
@@ -403,6 +405,13 @@
     </Compile>
     <Compile Include="Payment\PaymentPage.aspx.designer.cs">
       <DependentUpon>PaymentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\SuccessPage.aspx.cs">
+      <DependentUpon>SuccessPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\SuccessPage.aspx.designer.cs">
+      <DependentUpon>SuccessPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

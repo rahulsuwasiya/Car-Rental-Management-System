@@ -32,7 +32,7 @@
             </div>
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="#">PrimeCars@gmail.com</a></p>
+                <p><a href="https://mail.google.com">PrimeCars@gmail.com</a></p>
             </div>
         </div>
         <div class="footer-right">
@@ -42,11 +42,11 @@
                 Drive with Confidence, Drive Prime. Your Trusted Partner in Every Mile.
             </p>
             <div class="footer-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://in.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
     </footer>

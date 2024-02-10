@@ -51,10 +51,10 @@
   
                     <div class="inputBox"> 
                         <label for="city"> 
-                              City: 
+                              Mobile No.: 
                           </label> 
-                        <asp:TextBox ID="txtCity" runat="server" TextMode="SingleLine" placeholder="Enter city"  />
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ForeColor="Red" Font-Size="Large" ControlToValidate="txtCity" ErrorMessage="*"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txtMobile" runat="server" TextMode="Number" placeholder="Enter mobie no"  MaxLength="10" />
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ForeColor="Red" Font-Size="Large" ControlToValidate="txtMobile" ErrorMessage="*"></asp:RequiredFieldValidator>
                     </div> 
   
                     <div class="flex"> 
@@ -81,7 +81,7 @@
   
                 </div> 
                 <div class="col"> 
-                    <h3 class="title">Payment</h3> 
+                    <h3 class="title">Payment (Rs.<asp:Literal ID="lblTotalAmt" Text="" runat="server" />)</h3> 
   
                     <div class="inputBox"> 
                         <label for="name"> 
@@ -109,36 +109,38 @@
   
                     <div class="inputBox"> 
                         <label for="">Exp Month:</label>
-                        
-                       
-                        <asp:DropDownList runat="server">
+                         <asp:DropDownList ID="drpMonth" runat="server">
+                            <asp:ListItem Text="Month" />
                             <asp:ListItem Text="January" />
                             <asp:ListItem Text="February" />
-                            <asp:ListItem Text="January" />
-                            <asp:ListItem Text="February" />
-                            <asp:ListItem Text="January" />
-                            <asp:ListItem Text="February" />
-                            <asp:ListItem Text="January" />
-                            <asp:ListItem Text="February" />
-                            <asp:ListItem Text="January" />
-                            <asp:ListItem Text="February" />
-                            <asp:ListItem Text="January" />
-                            <asp:ListItem Text="February" />
+                            <asp:ListItem Text="March" />
+                            <asp:ListItem Text="April" />
+                            <asp:ListItem Text="May" />
+                            <asp:ListItem Text="June" />
+                            <asp:ListItem Text="July" />
+                            <asp:ListItem Text="August" />
+                            <asp:ListItem Text="September" />
+                            <asp:ListItem Text="October" />
+                            <asp:ListItem Text="November" />
+                            <asp:ListItem Text="December" />
                         </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" InitialValue="Month" runat="server" ForeColor="Red" Font-Size="Large" ControlToValidate="drpMonth" ErrorMessage="*"></asp:RequiredFieldValidator>
                     </div> 
   
   
                     <div class="flex"> 
                         <div class="inputBox"> 
                             <label for="">Exp Year:</label> 
-                            <select name="" id=""> 
-                                <option value="">Choose Year</option> 
-                                <option value="2023">2023</option> 
-                                <option value="2024">2024</option> 
-                                <option value="2025">2025</option> 
-                                <option value="2026">2026</option> 
-                                <option value="2027">2027</option> 
-                            </select> 
+                           
+                            <asp:DropDownList ID="drpYear" runat="server">
+                                <asp:ListItem Text="Year" />
+                                <asp:ListItem Text="2024" />
+                                <asp:ListItem Text="2025" />
+                                <asp:ListItem Text="2026" />
+                                <asp:ListItem Text="2027" />
+                                <asp:ListItem Text="2028" />
+                            </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" InitialValue="Year" runat="server" ForeColor="Red" Font-Size="Large" ControlToValidate="drpYear" ErrorMessage="*"></asp:RequiredFieldValidator>
                         </div> 
   
                         <div class="inputBox"> 
@@ -152,7 +154,7 @@
   
             </div> 
   
-            <asp:Button Text="Proceed to Checkout" CssClass="submit_btn" runat="server" />
+            <asp:Button ID="BtnPay" Text="Proceed to Pay" CssClass="submit_btn" OnClick="BtnPay_Click" runat="server" />
         </form> 
   
     </div> 
