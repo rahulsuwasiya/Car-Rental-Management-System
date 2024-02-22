@@ -7,7 +7,7 @@
   width: 330px;
   padding: 2rem 1rem;
   margin: 50px auto;
-  background-color: #fff;
+  background-color:#ffff;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 2rem;
-  color: #07001f;
+  color:var(--dark);
   margin-bottom: 1.2rem;
 }
 
@@ -39,11 +39,11 @@ h1 {
   width: 90%;
   color: #fff;
   cursor: pointer;
-  background: rgb(17, 107, 143);
+  background:var(--primary);
 }
 
 .button:hover {
-  background: rgb(255, 0, 0);
+  background:var(--primary-variant);
 }
 
 .text-name:focus {
@@ -74,7 +74,7 @@ h1 {
 }
 
 .member a {
-  color: rgb(17, 107, 143);
+  color:var(--primary);
   text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ h1 {
   margin: 0.3rem 1.4rem 0 0;
 }
 
-.recover a {
-  text-decoration: none;
-  color: rgb(17, 107, 143);
-}
+    .recover a {
+        text-decoration: none;
+        color: var(--primary);
+    }

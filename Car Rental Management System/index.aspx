@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Car_Rental_Management_System.index" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Car_Rental_Management_System.index" %>
 <%@ Register Src="~/Component/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
 
 

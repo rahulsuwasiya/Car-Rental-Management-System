@@ -67,7 +67,7 @@
                 <div class="sub-title">Customize with extras for comfort.</div>
             </div>
             <div class="item">
-                <i class="fa-solid fa-dollar-sign"></i>
+                <i class="fa-solid fa-indian-rupee-sign"></i>
                 <div class="head-title">make a deal</div>
                 <div class="sub-title">Confirm details, secure payment, and go.</div>
             </div>

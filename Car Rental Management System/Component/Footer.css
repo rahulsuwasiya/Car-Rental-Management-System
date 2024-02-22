@@ -19,7 +19,7 @@ footer {
   text-align: left;
   font: bold 16px sans-serif;
   padding: 50px 50px 60px 50px;
-  margin-top: 80px;
+  
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
@@ -39,7 +39,7 @@ footer {
 }
 
 .footer-distributed h3 span {
-  color: #3da9fc;
+  color:var(--primary);
 }
 
 /* Footer links */
@@ -100,7 +100,7 @@ footer {
 }
 
 .footer-distributed .footer-center p a {
-  color: #3da9fc;
+  color: var(--primary);
 }
 
 /* Footer Right */
@@ -148,7 +148,7 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #3F71EA;
+  color: var(--primary-variant);
 }
 
 @media (max-width: 880px) {

@@ -10,21 +10,26 @@
   font-family: "Assistant", sans-serif;
 }
 
-/*========================== Variable ============================*/
+/*========================== Variable ============================ #ffffff   #3da9fc   #d8eefe */
 :root {
-  --primary:#3da9fc;
-  --primary-variant: #90b4ce;
-  --secondary: #ef4565;
-  --dark: #5f5c7b;
-  --dark-variant: #094067;
-  --background: #ffffff;
-  --background-variant: #d8eefe;
-  --box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
-  --font-head-title: "Cormorant Infant", serif;
-  --font-sub-title: "Hind", sans-serif;
+    --primary: #ff4b31;
+    --primary-variant: #ff9e8e;
+    --nav-background: #ffffff;
+    --secondary: #ef4565;
+    --dark: #5f5c7b;
+    --dark-variant: #094067;
+    --background: #fff1f0;
+    --background-variant: #ffd4ce;
+    --box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+    --font-head-title: "Cormorant Infant", serif;
+    --font-sub-title: "Hind", sans-serif;
 }
 
 /*========================== Base Style ============================*/
+
+body{
+    background:var(--background);
+}
 html::-webkit-scrollbar {
   width: 0.5vw;
 }
