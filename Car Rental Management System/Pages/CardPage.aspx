@@ -66,6 +66,8 @@
       <div class="half">
         <div class="description">
           <p><asp:Label ID="lblCarInfo" Text='<%# Eval("CarInfo") %>' runat="server" Font-Italic="true" /></p>
+            <b>Capacity(Seats):</b><asp:Label Text="" ID="lblCarCapacity" runat="server" /><br />
+            <b>MPG:</b><asp:Label Text="" ID="lblCarMPG" runat="server" />
         </div>
         <span class="stock">Select No. of Days</span>
         <div class="reviews">
@@ -96,6 +98,9 @@
                 ErrorMessage="To Date must be greater than From Date" 
                 Display="Dynamic" 
                 ForeColor="Red"></asp:CompareValidator>
+          <asp:CompareValidator ID="CompareValidatorFromDate" runat="server" 
+              ControlToValidate="txtFdate" Type="Date" Operator="GreaterThanEqual"
+              ErrorMessage="From date must be today's date or later" ForeColor="Red"></asp:CompareValidator>
       </div>
     </div>
     <div class="card__footer">

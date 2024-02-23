@@ -50,5 +50,10 @@ namespace Car_Rental_Management_System.Pages
         {
             Response.Redirect("../Pages/RegisterPage.aspx");
         }
+
+        protected void BtnViewCars_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Pages/CarsPage.aspx");
+        }
     }
 }

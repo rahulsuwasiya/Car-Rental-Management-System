@@ -52,18 +52,18 @@
         <div class="secondary">
           About Our PrimeCars <span>Services</span>
         </div>
-        <h2 class="primary">150+</h2>
+        <h2 class="primary">100+</h2>
 
-        <h3 class="tertiary">Our Delicious Food</h3>
+        <h3 class="tertiary">Our Top Cars</h3>
 
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia itaque
-          saepe id hic rem doloribus quas esse voluptatibus eius sequi, possimus
-          maxime dolores tempore facilis fugit porro mollitia, est consequuntur.
+          Welcome to PrimeCars! Where every journey begins with ease and reliability. 
+            With our commitment to transparent pricing and exceptional service, we make renting a car a breeze. 
+            Book now and discover the convenience of PrimeCars.
         </p>
 
  
-          <asp:Button Text="View Cars" CssClass="btn" runat="server" />
+          <asp:Button Text="View Cars" ID="BtnViewCars" CssClass="btn" OnClick="BtnViewCars_Click" runat="server" />
       </div>
     </div>
       

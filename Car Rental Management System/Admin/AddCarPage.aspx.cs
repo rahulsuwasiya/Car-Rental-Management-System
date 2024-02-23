@@ -37,19 +37,19 @@ namespace Car_Rental_Management_System.Admin
                     byte[] fileData = CarImageUpload.FileBytes;
 
                     // Add the file data to the database
-                    cmd.CommandText = "INSERT INTO tblCar (CarName, CarCategory, PricePerDay, CarInfo, CarImage) VALUES (@CarName, @CarCategory, @PricePerDay, @CarInfo, @CarImage)";
+                    cmd.CommandText = "INSERT INTO tblCar (CarName, CarCategory,CarCapacity,CarMPG, PricePerDay, CarInfo, CarImage) VALUES (@CarName, @CarCategory,@CarCapacity,@CarMPG, @PricePerDay, @CarInfo, @CarImage)";
                     cmd.Parameters.AddWithValue("@CarImage", fileData);
                 }
                 else
                 {
                     // Handle if no file is uploaded
-                    cmd.CommandText = "INSERT INTO tblCar (CarName, CarCategory, PricePerDay, CarInfo) VALUES (@CarName, @CarCategory, @PricePerDay, @CarInfo)";
+                    cmd.CommandText = "INSERT INTO tblCar (CarName,CarCategory,CarCapacity,CarMPG, PricePerDay, CarInfo) VALUES (@CarName, @CarCategory,@CarCapacity,@CarMPG, @PricePerDay, @CarInfo)";
                 }
 
-               
-              
                 cmd.Parameters.AddWithValue("@CarName", txtCarName.Text);
                 cmd.Parameters.AddWithValue("@CarCategory", txtCarCategory.Text);
+                cmd.Parameters.AddWithValue("@CarCapacity",txtCarCapacity.Text);
+                cmd.Parameters.AddWithValue("@CarMPG",txtCarMPG.Text);
                 cmd.Parameters.AddWithValue("@PricePerDay", txtPricePerDay.Text);
                 cmd.Parameters.AddWithValue("@CarInfo", txtCarInfo.Text);
 

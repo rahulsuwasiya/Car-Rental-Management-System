@@ -202,23 +202,7 @@
                     </div>
                 </div>
 
-                <div class="car-category">
-                    <div class="top-box">
-                        <div class="head-title">engine</div>
-                        <div class="show-button"></div>
-                    </div>
-                    <div class="category-content">
-                        <div class="category-car">
-                            <asp:CheckBox Text="auto" runat="server" />
-                            
-                        </div>
-                        <div class="category-car">
-                            <asp:CheckBox Text="matic" runat="server" />
-                            
-                        </div>
-
-                    </div>
-                </div>
+                
 
 
             </div>
@@ -248,7 +232,7 @@
           <div class="car-feature">
               <div class="feature-item">
                   <i class="fa-solid fa-gear"></i>
-                  <span><asp:Label ID="lblCarEngine" Text='<%# Eval("CarEngine") %>' runat="server" /></span>
+                  <span>Auto</span>
               </div>
               <div class="feature-item">
                   <i class="fa-solid fa-couch"></i>
@@ -256,7 +240,7 @@
               </div>
               <div class="feature-item">
                   <i class="fa-solid fa-gas-pump"></i>
-                  <span><asp:Label ID="lblCarMPG" Text='<%# Eval("CarMPG") %>' runat="server" /> MPG</span>
+                  <span><asp:Label ID="lblCarMPG" Text='<%# Eval("CarMPG") %>' runat="server" /></span>
               </div>
           </div>
           

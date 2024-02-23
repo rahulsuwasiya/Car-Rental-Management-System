@@ -47,10 +47,11 @@
             <div class="content">
                 <h2>Contact Us</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                   Thank you for considering PrimeCars for your transportation needs. Whether you have questions,
+                    feedback, or need assistance, we're here to help. Feel free to reach out to us via phone, email, 
+                    or by filling out the contact form below.Our dedicated team is available 24x7 to assist you with reservations, 
+                    inquiries, or any concerns you may have. 
+                    Your satisfaction is our priority, and we look forward to serving you.
                     
                 </p>
             </div>
@@ -81,19 +82,29 @@
                 <div class="contactForm">
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <asp:TextBox CssClass="input" runat="server" />
-                        <span>Full Name</span>
+                                                                            
+                        <asp:TextBox CssClass="input" ID="txtName" runat="server" />
+                        
+                        <span>Full Name<asp:RequiredFieldValidator Font-Size="Large" ID="rfvName"  runat="server" ForeColor="Red" ControlToValidate="txtName"
+ErrorMessage="*"></asp:RequiredFieldValidator></span>
+                               
                     </div>
+                                                   
                     <div class="inputBox">
-    <asp:TextBox  CssClass="input" runat="server" />
-    <span>Email</span>
+    <asp:TextBox  CssClass="input" ID="txtEmail" TextMode="Email" runat="server" />
+                         
+            
+    <span>Email         <asp:RequiredFieldValidator ID="rfvEmail" Font-Size="Large" runat="server" ForeColor="Red" ControlToValidate="txtEmail"
+ErrorMessage="*"></asp:RequiredFieldValidator></span>
 </div>
                     <div class="inputBox">
-    <asp:TextBox runat="server"  CssClass="input" TextMode="MultiLine" />
-    <span>Type your Message...</span>
+    <asp:TextBox runat="server" ID="txtMessage"  CssClass="input" TextMode="MultiLine" />
+                         
+    <span>Type your Message...          <asp:RequiredFieldValidator ID="rfvMessage" runat="server" Font-Size="Large"  ForeColor="Red" ControlToValidate="txtMessage"
+ErrorMessage="*"></asp:RequiredFieldValidator></span>
 </div>
                                         <div class="inputBox">
-                                            <asp:Button Text="Send" CssClass="input submit" runat="server" />
+                                            <asp:Button Text="Send" ID="BtnSend" CssClass="input submit" OnClick="BtnSend_Click" runat="server" />
 </div>
                 </div>
             </div>

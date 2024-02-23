@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Car_Rental_Management_System.Admin
 {
@@ -21,8 +22,10 @@ namespace Car_Rental_Management_System.Admin
             CarPrice.Text = Session["CarPrice"].ToString();
             CarImage.ImageUrl = Session["CarImage"].ToString();
             lblCarInfo.Text= Session["CarInfo"].ToString();
+            lblCarCapacity.Text= Session["CarCapacity"].ToString();
+            lblCarMPG.Text= Session["CarMPG"].ToString();
 
-           
+
             if (Session["UserName"] != null)
             {
                 BtnLogin.Visible = false;
@@ -35,6 +38,12 @@ namespace Car_Rental_Management_System.Admin
             else
             {
 
+            }
+
+            if (!IsPostBack)
+            {
+                // Set ValueToCompare property to today's date
+                CompareValidatorFromDate.ValueToCompare = DateTime.Now.ToShortDateString();
             }
         }
 

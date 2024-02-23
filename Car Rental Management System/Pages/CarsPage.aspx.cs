@@ -44,7 +44,7 @@ namespace Car_Rental_Management_System.Pages
                     cmd = new MySqlCommand();
                     con.Open();
                     cmd.Connection = con;
-                    cmd.CommandText = "SELECT CarName,CarCategory,CarCapacity,CarMPG,CarEngine,PricePerDay,CarImage FROM tblCar";
+                    cmd.CommandText = "SELECT CarName,CarCategory,CarCapacity,CarMPG,PricePerDay,CarImage FROM tblCar";
                     dr = cmd.ExecuteReader();
                     reptProduct.DataSource = dr;
                     reptProduct.DataBind();
@@ -96,12 +96,16 @@ namespace Car_Rental_Management_System.Pages
                 RepeaterItem item = (RepeaterItem)btn.NamingContainer;
                 string CarName = ((Label)item.FindControl("lblName")).Text;
                 string CarCategory = ((Label)item.FindControl("lblCategory")).Text;
+                string CarCapacity = ((Label)item.FindControl("lblCarCapacity")).Text;
+                string CarMPG = ((Label)item.FindControl("lblCarMPG")).Text;
                 string CarPrice = ((Literal)item.FindControl("lblPrice")).Text;
                 string CarImage = ((Image)item.FindControl("CarImage")).ImageUrl;
 
                 Session["CarName"] = CarName;
                 Session["CarCategory"] = CarCategory;
                 Session["CarPrice"] = CarPrice;
+                Session["CarCapacity"] = CarCapacity;
+                Session["CarMPG"] = CarMPG;
                 Session["CarImage"] = CarImage;
                 try
                 {
