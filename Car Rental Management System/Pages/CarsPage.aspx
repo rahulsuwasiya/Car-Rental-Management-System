@@ -171,30 +171,16 @@
                         <div class="show-button"></div>
                     </div>
                     <div class="category-content">
-                        <div class="category-car">
-                            <asp:CheckBox Text="coup" runat="server" />
-                            <div class="category-count">(10)</div>
-                        </div>
+                        
                         <div class="category-car">
                             <asp:CheckBox Text="sedan" runat="server" />
-                            <div class="category-count">(10)</div>
+                           
                         </div>
                         <div class="category-car">
                             <asp:CheckBox Text="SUV" runat="server" />
-                            <div class="category-count">(10)</div>
+                           
                         </div>
-                        <div class="category-car">
-                            <asp:CheckBox Text="pickup" runat="server" />
-                            <div class="category-count">(10)</div>
-                        </div>
-                        <div class="category-car">
-                            <asp:CheckBox Text="hatchback" runat="server" />
-                            <div class="category-count">(10)</div>
-                        </div>
-                        <div class="category-car">
-                            <asp:CheckBox Text="MPV" runat="server" />
-                            <div class="category-count">(10)</div>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -206,11 +192,11 @@
                     <div class="category-content">
                         <div class="category-car">
                             <asp:CheckBox Text="2 - 5" runat="server" />
-                            <div class="category-count">(544)</div>
+                            
                         </div>
                         <div class="category-car">
                             <asp:CheckBox Text="6 or more" runat="server" />
-                            <div class="category-count">(10)</div>
+                            
                         </div>
 
                     </div>
@@ -224,11 +210,11 @@
                     <div class="category-content">
                         <div class="category-car">
                             <asp:CheckBox Text="auto" runat="server" />
-                            <div class="category-count">(544)</div>
+                            
                         </div>
                         <div class="category-car">
                             <asp:CheckBox Text="matic" runat="server" />
-                            <div class="category-count">(10)</div>
+                            
                         </div>
 
                     </div>
@@ -262,15 +248,15 @@
           <div class="car-feature">
               <div class="feature-item">
                   <i class="fa-solid fa-gear"></i>
-                  <span>auto</span>
+                  <span><asp:Label ID="lblCarEngine" Text='<%# Eval("CarEngine") %>' runat="server" /></span>
               </div>
               <div class="feature-item">
                   <i class="fa-solid fa-couch"></i>
-                  <span>2 seats</span>
+                  <span><asp:Label ID="lblCarCapacity" Text='<%# Eval("CarCapacity") %>' runat="server" /> seats</span>
               </div>
               <div class="feature-item">
                   <i class="fa-solid fa-gas-pump"></i>
-                  <span>30 MPG</span>
+                  <span><asp:Label ID="lblCarMPG" Text='<%# Eval("CarMPG") %>' runat="server" /> MPG</span>
               </div>
           </div>
           

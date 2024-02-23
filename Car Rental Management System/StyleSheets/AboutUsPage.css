@@ -1,0 +1,61 @@
+﻿.about-section {
+  margin-top: 100px;
+  width: 95%;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  margin-bottom: 110px;
+}
+.about-section .image-right {
+  width: 50%;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+.about-section .image-right img {
+  height: 400px;
+}
+
+.about-section h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.primary {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.secondary {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.secondary span {
+  color: var(--primary-variant);
+}
+
+.tertiary {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.text {
+  width: 50%;
+  border-radius: 7px;
+  margin-top: 50px;
+}
+
+.btn {
+  padding: 14px;
+  background: var(--primary);
+  border-radius: 9px;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  margin: 20px 0 40px 10px;
+}

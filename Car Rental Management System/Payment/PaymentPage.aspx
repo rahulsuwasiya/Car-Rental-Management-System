@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-     <link href="../StyleSheets/Style.css" rel="stylesheet" />
+      <link href="../StyleSheets/Style.css" rel="stylesheet" />
       <link href="PaymentPage.css" rel="stylesheet" />
 </head>
 <body>
@@ -53,7 +53,7 @@
                         <label for="city"> 
                               Mobile No.: 
                           </label> 
-                        <asp:TextBox ID="txtMobile" runat="server" TextMode="Number" placeholder="Enter mobie no"  MaxLength="10" />
+                        <asp:TextBox ID="txtMobile" runat="server" type="tel" pattern="[0-9]{10}" placeholder="Enter mobie no"  MaxLength="10" />
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ForeColor="Red" Font-Size="Large" ControlToValidate="txtMobile" ErrorMessage="*"></asp:RequiredFieldValidator>
                     </div> 
   
@@ -73,7 +73,7 @@
                                   Zip Code: 
                               </label> 
                       
-                             <asp:TextBox ID="txtZipCode" runat="server" TextMode="Number" placeholder="123 456"  />
+                             <asp:TextBox ID="txtZipCode" runat="server" type="text" pattern="[0-9]{6}" placeholder="123 456"  />
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ForeColor="Red" Font-Size="Large" ControlToValidate="txtZipCode" ErrorMessage="*"></asp:RequiredFieldValidator>
                         </div> 
   
@@ -103,7 +103,7 @@
                         <label for="cardNum"> 
                               Credit Card Number: 
                           </label>
-                        <asp:TextBox ID="txtcardNum" runat="server" TextMode="SingleLine" MaxLength="19" placeholder="1111-2222-3333-4444"   />
+                        <asp:TextBox ID="txtcardNum" runat="server" type="text" pattern="[0-9]{16}" maxlength="16" placeholder="1111-2222-3333-4444"   />
                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ForeColor="Red" Font-Size="Large" ControlToValidate="txtcardNum" ErrorMessage="*"></asp:RequiredFieldValidator>
                     </div> 
   
@@ -145,7 +145,7 @@
   
                         <div class="inputBox"> 
                             <label for="cvv">CVV</label>
-                            <asp:TextBox ID="txtCVV" runat="server" TextMode="Number" placeholder="1234"   />
+                            <asp:TextBox ID="txtCVV" runat="server" type="text" pattern="[0-9]{3,4}" placeholder="1234"   />
                            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ForeColor="Red" Font-Size="Large" ControlToValidate="txtCVV" ErrorMessage="*"></asp:RequiredFieldValidator>
                         </div> 
                     </div> 

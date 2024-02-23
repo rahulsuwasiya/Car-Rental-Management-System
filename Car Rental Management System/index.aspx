@@ -60,10 +60,10 @@
             <div class="download-box">
                 <div class="content-box">
                     <div class="box">
-                        <img src="Images/App_Store.png" />
+                        <a href="https://www.apple.com/in/app-store/"><img src="Images/App_Store.png" /></a>
                     </div>
                     <div class="box">
-                        <img src="Images/Play_Store.png" />
+                        <a href="https://play.google.com/"><img src="Images/Play_Store.png" /></a>
                     </div>
                 </div>
             </div>

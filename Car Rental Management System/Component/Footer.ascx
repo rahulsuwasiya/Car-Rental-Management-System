@@ -9,9 +9,9 @@
             <p class="footer-links">
                 <a href="../index.aspx">Home</a>
                 |
-                <a href="#">About</a>
+                <a href="../Pages/AboutUsPage.aspx">About</a>
                 |
-                <a href="#">Contact</a>
+                <a href="../Pages/ContactUsPage.aspx">Contact</a>
                 |
                 <a href="../Admin/AdminLogin.aspx">Admin</a>
             </p>
@@ -28,7 +28,7 @@
 
             <div>
                 <i class="fa fa-phone"></i>
-                <p>+91 85**3**520</p>
+                <p>+91 8591342520</p>
             </div>
             <div>
                 <i class="fa fa-envelope"></i>

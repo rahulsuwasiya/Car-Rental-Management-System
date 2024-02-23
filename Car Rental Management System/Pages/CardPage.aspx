@@ -73,11 +73,11 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
      ControlToValidate="txtfdate" ErrorMessage="*" 
      ForeColor="Red"></asp:RequiredFieldValidator><br />
-           &nbsp;&nbsp;To Date:&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txtTdate" runat="server"  TextMode="Date"/>
+           &nbsp;&nbsp; To Date:&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txtTdate" runat="server"  TextMode="Date"/>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                 ControlToValidate="txtTdate" ErrorMessage="*" 
                 ForeColor="Red"></asp:RequiredFieldValidator><br />
-           &nbsp;Location:&nbsp;&nbsp;<asp:DropDownList ID="drpLocation" runat="server">
+           &nbsp;Location: &nbsp;&nbsp;<asp:DropDownList ID="drpLocation" runat="server">
                 <asp:ListItem Text="Select" />
                 <asp:ListItem Text="Dadar" />
                 <asp:ListItem Text="Kurla" />

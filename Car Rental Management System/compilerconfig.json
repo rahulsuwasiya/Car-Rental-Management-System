@@ -73,5 +73,13 @@
   {
     "outputFile": "Payment/PaymentPage.css",
     "inputFile": "Payment/PaymentPage.scss"
+  },
+  {
+    "outputFile": "StyleSheets/AboutUsPage.css",
+    "inputFile": "StyleSheets/AboutUsPage.scss"
+  },
+  {
+    "outputFile": "StyleSheets/ContactUsPage.css",
+    "inputFile": "StyleSheets/ContactUsPage.scss"
   }
 ]

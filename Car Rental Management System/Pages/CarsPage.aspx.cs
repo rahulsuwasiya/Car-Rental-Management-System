@@ -44,7 +44,7 @@ namespace Car_Rental_Management_System.Pages
                     cmd = new MySqlCommand();
                     con.Open();
                     cmd.Connection = con;
-                    cmd.CommandText = "SELECT CarName,CarCategory,PricePerDay,CarImage FROM tblCar";
+                    cmd.CommandText = "SELECT CarName,CarCategory,CarCapacity,CarMPG,CarEngine,PricePerDay,CarImage FROM tblCar";
                     dr = cmd.ExecuteReader();
                     reptProduct.DataSource = dr;
                     reptProduct.DataBind();

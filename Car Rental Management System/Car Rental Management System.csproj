@@ -127,6 +127,7 @@
     </Content>
     <Content Include="Admin\AdminPassRecovery.aspx" />
     <Content Include="Admin\RemoveCarPage.aspx" />
+    <Content Include="Images\AboutCar.png" />
     <Content Include="Images\cards.png" />
     <Content Include="Images\Image1.png" />
     <Content Include="Images\Image2.png" />
@@ -143,12 +144,20 @@
     <Content Include="Images\User5.jpeg" />
     <Content Include="Images\User6.jpeg" />
     <Content Include="Images\UserIcon.png" />
+    <Content Include="Pages\AboutUsPage.aspx" />
     <Content Include="Pages\CardPage.aspx" />
+    <Content Include="Pages\ContactUsPage.aspx" />
     <Content Include="Payment\PaymentPage.aspx" />
     <Content Include="Payment\PaymentPage.css">
       <DependentUpon>PaymentPage.scss</DependentUpon>
     </Content>
     <Content Include="Payment\SuccessPage.aspx" />
+    <Content Include="StyleSheets\AboutUsPage.css">
+      <DependentUpon>AboutUsPage.scss</DependentUpon>
+    </Content>
+    <Content Include="StyleSheets\AboutUsPage.min.css">
+      <DependentUpon>AboutUsPage.css</DependentUpon>
+    </Content>
     <Content Include="StyleSheets\CardPage.css">
       <DependentUpon>CardPage.scss</DependentUpon>
     </Content>
@@ -192,6 +201,12 @@
     </Content>
     <Content Include="StyleSheets\CarsPage.css">
       <DependentUpon>CarsPage.scss</DependentUpon>
+    </Content>
+    <Content Include="StyleSheets\ContactUsPage.css">
+      <DependentUpon>ContactUsPage.scss</DependentUpon>
+    </Content>
+    <Content Include="StyleSheets\ContactUsPage.min.css">
+      <DependentUpon>ContactUsPage.css</DependentUpon>
     </Content>
     <Content Include="StyleSheets\FaqPage.css">
       <DependentUpon>FaqPage.scss</DependentUpon>
@@ -280,6 +295,13 @@
     <Compile Include="Admin\RemoveCarPage.aspx.designer.cs">
       <DependentUpon>RemoveCarPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AboutUsPage.aspx.cs">
+      <DependentUpon>AboutUsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AboutUsPage.aspx.designer.cs">
+      <DependentUpon>AboutUsPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CardPage.aspx.cs">
       <DependentUpon>CardPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -335,6 +357,13 @@
     </Compile>
     <Compile Include="Pages\CarsPage.aspx.designer.cs">
       <DependentUpon>CarsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ContactUsPage.aspx.cs">
+      <DependentUpon>ContactUsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ContactUsPage.aspx.designer.cs">
+      <DependentUpon>ContactUsPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\FaqPage.aspx.cs">
       <DependentUpon>FaqPage.aspx</DependentUpon>
@@ -438,6 +467,8 @@
     <Content Include="StyleSheets\UpdatePage.scss" />
     <Content Include="StyleSheets\Navbar.scss" />
     <Content Include="Payment\PaymentPage.scss" />
+    <Content Include="StyleSheets\ContactUsPage.scss" />
+    <Content Include="StyleSheets\AboutUsPage.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
