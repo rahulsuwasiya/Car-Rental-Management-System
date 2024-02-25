@@ -93,9 +93,9 @@
 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtCarCapacity"
     Display="Dynamic" ForeColor="Red" ErrorMessage="Car Capacity is required"></asp:RequiredFieldValidator>
 
-<asp:TextBox ID="txtCarMPG" runat="server"  placeholder="Enter Car MPG"></asp:TextBox>
-<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtCarMPG"
-    Display="Dynamic" ForeColor="Red" ErrorMessage="Car MPG is required"></asp:RequiredFieldValidator>
+<asp:TextBox ID="txtCarKmpL" runat="server"  placeholder="Enter Car Kmp/L"></asp:TextBox>
+<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtCarKmpL"
+    Display="Dynamic" ForeColor="Red" ErrorMessage="Car Kmp/L is required"></asp:RequiredFieldValidator>
 
 <asp:TextBox ID="txtPricePerDay" runat="server"  placeholder="Enter Price Per Day"></asp:TextBox>
 <asp:RequiredFieldValidator ID="RequiredPricePerDayValidator" runat="server" ControlToValidate="txtPricePerDay"

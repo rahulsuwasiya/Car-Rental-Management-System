@@ -38,13 +38,39 @@ namespace Car_Rental_Management_System.Admin
                 string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
                 con = new MySqlConnection(connectionString);
                 cmd = new MySqlCommand();
-                con.Open();
                 cmd.Connection = con;
-                cmd.CommandText = "UPDATE tblAdmin SET Password = @Password WHERE Username=@Username";
-                cmd.Parameters.AddWithValue("@Password", txtNewPass.Text);
+                cmd.CommandText = "SELECT COUNT(*) FROM tblAdmin WHERE Username = @Username";
                 cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
-                cmd.ExecuteNonQuery();
-                Response.Write("<script>alert('Password Updated Successfully..');window.location = 'AdminLogin.aspx';</script>");
+
+                con.Open();
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                if (count > 0)
+                {
+                    // Username found, proceed with password update
+                    cmd.Parameters.Clear();
+                    cmd.CommandText = "UPDATE tblAdmin SET Password = @Password WHERE Username = @Username";
+                    cmd.Parameters.AddWithValue("@Password", txtNewPass.Text);
+                    cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        // Password updated successfully
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Password Updated Successfully..'); window.location ='AdminLogin.aspx';", true);
+                    }
+                    else
+                    {
+                        // Password not updated
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Failed to update password.');", true);
+                    }
+                }
+                else
+                {
+                    // Username not found
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Username not found. Password not updated.');", true);
+                }
 
 
             }

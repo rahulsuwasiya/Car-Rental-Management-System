@@ -51,6 +51,42 @@ namespace Car_Rental_Management_System.Pages
         protected global::System.Web.UI.WebControls.Label lblUser;
 
         /// <summary>
+        /// chkCategory1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkCategory1;
+
+        /// <summary>
+        /// chkCategory2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkCategory2;
+
+        /// <summary>
+        /// chkCategory3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkCategory3;
+
+        /// <summary>
+        /// chkCategory4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkCategory4;
+
+        /// <summary>
         /// reptProduct control.
         /// </summary>
         /// <remarks>

@@ -23,7 +23,7 @@ namespace Car_Rental_Management_System.Admin
             CarImage.ImageUrl = Session["CarImage"].ToString();
             lblCarInfo.Text= Session["CarInfo"].ToString();
             lblCarCapacity.Text= Session["CarCapacity"].ToString();
-            lblCarMPG.Text= Session["CarMPG"].ToString();
+            lblCarKmpL.Text= Session["CarKmpL"].ToString();
 
 
             if (Session["UserName"] != null)

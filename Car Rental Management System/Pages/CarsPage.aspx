@@ -165,7 +165,7 @@
 
             <div  class="car-category-container">
 
-                <div class="car-category">
+                <div class="car-category show">
                     <div class="top-box">
                         <div class="head-title">car type</div>
                         <div class="show-button"></div>
@@ -173,29 +173,29 @@
                     <div class="category-content">
                         
                         <div class="category-car">
-                            <asp:CheckBox Text="sedan" runat="server" />
+                            <asp:CheckBox ID="chkCategory1" AutoPostBack="true" OnCheckedChanged="CheckBox_CheckedChanged" Text="Sedan" runat="server" />
                            
                         </div>
                         <div class="category-car">
-                            <asp:CheckBox Text="SUV" runat="server" />
+                            <asp:CheckBox ID="chkCategory2" AutoPostBack="true" OnCheckedChanged="CheckBox_CheckedChanged" Text="SUV" runat="server" />
                            
                         </div>
                         
                     </div>
                 </div>
 
-                <div class="car-category">
+                <div class="car-category show">
                     <div class="top-box">
                         <div class="head-title">capacity</div>
                         <div class="show-button"></div>
                     </div>
                     <div class="category-content">
                         <div class="category-car">
-                            <asp:CheckBox Text="2 - 5" runat="server" />
+                            <asp:CheckBox Text="2 - 5" ID="chkCategory3" AutoPostBack="true" OnCheckedChanged="CheckBox_CheckedChanged" runat="server" />
                             
                         </div>
                         <div class="category-car">
-                            <asp:CheckBox Text="6 or more" runat="server" />
+                            <asp:CheckBox Text="6 or more" ID="chkCategory4" AutoPostBack="true" OnCheckedChanged="CheckBox_CheckedChanged" runat="server" />
                             
                         </div>
 
@@ -240,7 +240,7 @@
               </div>
               <div class="feature-item">
                   <i class="fa-solid fa-gas-pump"></i>
-                  <span><asp:Label ID="lblCarMPG" Text='<%# Eval("CarMPG") %>' runat="server" /></span>
+                  <span><asp:Label ID="lblCarKmpL" Text='<%# Eval("CarKmpL") %>' runat="server" /> Kmpl</span>
               </div>
           </div>
           

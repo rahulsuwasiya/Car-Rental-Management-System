@@ -12,10 +12,9 @@
   color: var(--dark-variant);
   margin-bottom: 50px;
 }
-
 .testimonial-page .testimonials-container {
-    -webkit-user-select: none;
-    user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .testimonial-page .testimonials-container .testimonials-box {
   padding-left: 180px;
@@ -131,7 +130,5 @@
   }
   .testimonial-page .testimonials-container .swiper-pagination {
     left: 10% !important;
-    
   }
 }
-

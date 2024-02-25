@@ -65,9 +65,9 @@
       </div>
       <div class="half">
         <div class="description">
-          <p><asp:Label ID="lblCarInfo" Text='<%# Eval("CarInfo") %>' runat="server" Font-Italic="true" /></p>
+          <p><asp:Label ID="lblCarInfo" Text='<%# Eval("CarInfo") %>' runat="server" Font-Italic="true" /></p><br />
             <b>Capacity(Seats):</b><asp:Label Text="" ID="lblCarCapacity" runat="server" /><br />
-            <b>MPG:</b><asp:Label Text="" ID="lblCarMPG" runat="server" />
+            <b>Kmpl:</b><asp:Label Text="" ID="lblCarKmpL" runat="server" />
         </div>
         <span class="stock">Select No. of Days</span>
         <div class="reviews">

@@ -71,7 +71,7 @@ namespace Car_Rental_Management_System.Pages
             txtName.Text = "";
             txtEmail.Text = "";
             txtMessage.Text = "";
-            Response.Write("<script>alert('Message Successfully Sent..');window.location = 'ContactUsPage.aspx';</script>");
+            Response.Write("<script>alert('Message Sent Successfully..');window.location = 'ContactUsPage.aspx';</script>");
         }
     }
 }

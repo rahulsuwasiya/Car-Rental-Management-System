@@ -35,7 +35,7 @@
             }
 
             &:hover {
-                background: #252525;
+                background:var(--primary-variant);
             }
         }
     }
@@ -111,7 +111,7 @@
         span.stock {
             font-family: "Montserrat", sans-serif;
             font-weight: 600;
-            color:var(--primary);
+            color: var(--primary);
         }
 
         .reviews {
@@ -182,7 +182,7 @@
         .action {
             button {
                 cursor: pointer;
-                border: 1px solid #115dd8;
+                border: 1px solid var(--dark);
                 padding: 14px 30px;
                 border-radius: 200px;
                 color: #fff;

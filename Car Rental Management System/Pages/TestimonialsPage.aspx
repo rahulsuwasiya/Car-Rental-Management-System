@@ -61,7 +61,7 @@
                         </div>
                         <div class="profile-info">
                             <div class="profile-name">
-                                John D
+                                Ajay Patil
                             </div>
                             <div class="profile-job">
                                 Creator
@@ -90,7 +90,7 @@
         </div>
         <div class="profile-info">
             <div class="profile-name">
-                Sarah M
+                Snehal Thakur
             </div>
             <div class="profile-job">
                 Businessman
@@ -116,11 +116,11 @@
                 <div class="profile-box swiper-slide">
                     <div class="top-box">
                         <div class="profile-image">
-                            <img src="../Images/User3.jpeg" />
+                            <img src="../Images/User3.jpg" />
                         </div>
                         <div class="profile-info">
                             <div class="profile-name">
-                                David L
+                                Ashwin Patel
                             </div>
                             <div class="profile-job">
                                 Lawyer
@@ -146,11 +146,11 @@
                 <div class="profile-box swiper-slide">
     <div class="top-box">
         <div class="profile-image">
-            <img src="../Images/User5.jpeg" />
+            <img src="../Images/User5.jpg" />
         </div>
         <div class="profile-info">
             <div class="profile-name">
-                lina
+                Aishwarya chouhan
             </div>
             <div class="profile-job">
                 Professor
@@ -175,11 +175,11 @@
                                 <div class="profile-box swiper-slide">
                     <div class="top-box">
                         <div class="profile-image">
-                            <img src="../Images/User6.jpeg" />
+                            <img src="../Images/User6.jpg" />
                         </div>
                         <div class="profile-info">
                             <div class="profile-name">
-                                Arun T
+                                Arun Tiwari
                             </div>
                             <div class="profile-job">
                                 Artist

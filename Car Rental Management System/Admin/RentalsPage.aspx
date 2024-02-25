@@ -106,7 +106,7 @@
                     <div class="card--header">
                         <div class="amount">
                             <span class="title">
-                                Completed Rentals</span>
+                                Rentals</span>
                             <span class="amount--value">
                                 <asp:Literal ID="lblCompRent" Text="" runat="server" /></span>
                         </div>

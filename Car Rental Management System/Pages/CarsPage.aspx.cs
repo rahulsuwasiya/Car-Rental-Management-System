@@ -35,26 +35,62 @@ namespace Car_Rental_Management_System.Pages
             {
 
             }
-            if (!IsPostBack)
-            {
-                try
-                {
-                    string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
-                    con = new MySqlConnection(connectionString);
-                    cmd = new MySqlCommand();
-                    con.Open();
-                    cmd.Connection = con;
-                    cmd.CommandText = "SELECT CarName,CarCategory,CarCapacity,CarMPG,PricePerDay,CarImage FROM tblCar";
-                    dr = cmd.ExecuteReader();
-                    reptProduct.DataSource = dr;
-                    reptProduct.DataBind();
 
-                }
-                catch (Exception ex)
+            if(!IsPostBack)
+            {
+                LoadData();
+            }
+            
+        }
+
+        protected void CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        protected void LoadData()
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                string query = "SELECT CarName, CarCategory, CarCapacity, CarKmpL, PricePerDay, CarImage FROM tblCar WHERE 1=1";
+
+                // Check each checkbox and append corresponding WHERE conditions to the query
+                List<string> conditions = new List<string>();
+
+                if (chkCategory1.Checked)
                 {
-                    Console.WriteLine(ex.Message);
+                    conditions.Add("CarCategory = 'Sedan'");
                 }
-                con.Close();
+                if (chkCategory2.Checked)
+                {
+                    conditions.Add("CarCategory = 'SUV'");
+                }
+                if(chkCategory3.Checked)
+                {
+                    conditions.Add("CarCapacity<6");
+                }
+                if (chkCategory4.Checked)
+                {
+                    conditions.Add("CarCapacity>=6");
+                }
+                // Add more if needed for other categories
+
+                // Combine the conditions with OR
+                if (conditions.Any())
+                {
+                    query += " AND (" + string.Join(" OR ", conditions) + ")";
+                }
+
+                using (MySqlCommand cmd = new MySqlCommand(query, con))
+                {
+                    con.Open();
+                    using (MySqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        reptProduct.DataSource = dr;
+                        reptProduct.DataBind();
+                    }
+                }
             }
         }
 
@@ -97,7 +133,7 @@ namespace Car_Rental_Management_System.Pages
                 string CarName = ((Label)item.FindControl("lblName")).Text;
                 string CarCategory = ((Label)item.FindControl("lblCategory")).Text;
                 string CarCapacity = ((Label)item.FindControl("lblCarCapacity")).Text;
-                string CarMPG = ((Label)item.FindControl("lblCarMPG")).Text;
+                string CarKmpL = ((Label)item.FindControl("lblCarKmpL")).Text;
                 string CarPrice = ((Literal)item.FindControl("lblPrice")).Text;
                 string CarImage = ((Image)item.FindControl("CarImage")).ImageUrl;
 
@@ -105,7 +141,7 @@ namespace Car_Rental_Management_System.Pages
                 Session["CarCategory"] = CarCategory;
                 Session["CarPrice"] = CarPrice;
                 Session["CarCapacity"] = CarCapacity;
-                Session["CarMPG"] = CarMPG;
+                Session["CarKmpL"] = CarKmpL;
                 Session["CarImage"] = CarImage;
                 try
                 {
