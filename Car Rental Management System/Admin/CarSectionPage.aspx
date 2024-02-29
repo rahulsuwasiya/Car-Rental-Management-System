@@ -80,6 +80,7 @@
            <br />
            <div class="btn"><asp:Button Text="Add a Car" runat="server" CssClass="outer-button inner-button" Font-Size="Medium" Font-Bold="true" OnClick="Unnamed_Click" />
            &nbsp;<asp:Button Text="Remove a Car" runat="server" CssClass="outer-button inner-button" Font-Size="Medium" Font-Bold="true" OnClick="Unnamed_Click1" />
+             &nbsp;  <asp:Button Text="Modify" runat="server" CssClass="outer-button inner-button" Font-Size="Medium" Font-Bold="true" OnClick="Unnamed_Click2" />
        </div>
        </div>
        

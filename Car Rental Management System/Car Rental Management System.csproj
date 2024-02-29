@@ -126,6 +126,7 @@
       <DependentUpon>AdminLogin.css</DependentUpon>
     </Content>
     <Content Include="Admin\AdminPassRecovery.aspx" />
+    <Content Include="Admin\ModifyCarPage.aspx" />
     <Content Include="Admin\RemoveCarPage.aspx" />
     <Content Include="Images\AboutCar.png" />
     <Content Include="Images\cards.png" />
@@ -287,6 +288,13 @@
     </Compile>
     <Compile Include="Admin\AdminPassRecovery.aspx.designer.cs">
       <DependentUpon>AdminPassRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModifyCarPage.aspx.cs">
+      <DependentUpon>ModifyCarPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModifyCarPage.aspx.designer.cs">
+      <DependentUpon>ModifyCarPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\RemoveCarPage.aspx.cs">
       <DependentUpon>RemoveCarPage.aspx</DependentUpon>

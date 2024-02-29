@@ -55,5 +55,10 @@ namespace Car_Rental_Management_System.Admin
         {
             Response.Redirect("../Admin/RemoveCarPage.aspx");
         }
+
+        protected void Unnamed_Click2(object sender, EventArgs e)
+        {
+            Response.Redirect("../Admin/ModifyCarPage.aspx");
+        }
     }
 }
