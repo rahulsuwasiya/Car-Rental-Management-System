@@ -63,13 +63,13 @@
                         <img src="../Images/User1.jpg" />
                     </div>
                     <div class="circle-profile">
-                        <img src="../Images/User2.jpeg" />
+                        <img src="../Images/User2.jpg" />
                     </div>
                     <div class="circle-profile">
-                        <img src="../Images/User3.jpeg" />
+                        <img src="../Images/User3.jpg" />
                     </div>
                     <div class="circle-profile">
-                        <img src="../Images/User4.jpeg" />
+                        <img src="../Images/User4.jpg" />
                     </div>
                     <div class="circle-profile">
                         9k+

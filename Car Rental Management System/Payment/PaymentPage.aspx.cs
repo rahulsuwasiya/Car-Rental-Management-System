@@ -3,6 +3,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -54,6 +55,16 @@ namespace Car_Rental_Management_System.Payment
             cmd.Parameters.AddWithValue("@FromDate", FromDate);
             cmd.Parameters.AddWithValue("@ToDate", ToDate);
             cmd.ExecuteNonQuery();
+
+            con = new MySqlConnection(connectionString);
+            con.Open();
+            cmd = new MySqlCommand();
+            cmd.Connection = con;
+            cmd.CommandText = "UPDATE tblCar SET CarStatus = 'Rented' WHERE CarName = @CarName";
+            cmd.Parameters.AddWithValue("@CarName", CarName);
+            cmd.ExecuteNonQuery();
+                
+
             Response.Redirect("../Payment/SuccessPage.aspx");
         }
     }

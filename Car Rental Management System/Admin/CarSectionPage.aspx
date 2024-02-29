@@ -70,9 +70,10 @@
                     <asp:BoundField DataField="C_Id" HeaderText="Car ID" SortExpression="ID" />
                     <asp:BoundField DataField="CarName" HeaderText="Car Name" SortExpression="Name" />
                     <asp:BoundField DataField="CarCategory" HeaderText="Car Category" SortExpression="Name" />
-                     <asp:BoundField DataField="CarCapacity" HeaderText="Car Capacity(Seats)" SortExpression="Name" />
-                     <asp:BoundField DataField="CarKmpL" HeaderText="Car Kmp/L" SortExpression="Name" />
-                    <asp:BoundField DataField="PricePerDay" HeaderText="Price Per Day" SortExpression="Name" />     
+                    <asp:BoundField DataField="CarCapacity" HeaderText="Car Capacity(Seats)" SortExpression="Name" />
+                    <asp:BoundField DataField="CarKmpL" HeaderText="Car Kmp/L" SortExpression="Name" />
+                    <asp:BoundField DataField="PricePerDay" HeaderText="Price Per Day" SortExpression="Name" />
+                    <asp:BoundField DataField="CarStatus" HeaderText="Status" SortExpression="Name" />   
                 </Columns>
                 </asp:GridView>
            </div>

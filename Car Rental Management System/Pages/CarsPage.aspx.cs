@@ -53,7 +53,7 @@ namespace Car_Rental_Management_System.Pages
             string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
             using (MySqlConnection con = new MySqlConnection(connectionString))
             {
-                string query = "SELECT CarName, CarCategory, CarCapacity, CarKmpL, PricePerDay, CarImage FROM tblCar WHERE 1=1";
+                string query = "SELECT CarName, CarCategory, CarCapacity, CarKmpL, PricePerDay, CarImage FROM tblCar WHERE CarStatus!='Rented' and 1=1 ";
 
                 // Check each checkbox and append corresponding WHERE conditions to the query
                 List<string> conditions = new List<string>();

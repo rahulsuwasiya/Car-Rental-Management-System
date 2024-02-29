@@ -70,17 +70,29 @@ namespace Car_Rental_Management_System.Admin
                 // Output the total count of entries
                 lblTransaction.Text = totalTransaction.ToString();
             }
-            string q2 = "SELECT COUNT(*) FROM tblCar";
-            cmd = new MySqlCommand(q2, connection);
-            object result2 = cmd.ExecuteScalar();
 
-            // Attempt to parse the result to an integer
-            int totalCarCount;
-            if (result2 != null && int.TryParse(result2.ToString(), out totalCarCount))
+
+            int availableCarCount = 0;
+            using (MySqlConnection con = new MySqlConnection(connectionString))
             {
-                // Output the total count of entries
-                lblCarCount.Text = totalCarCount.ToString();
+                try
+                {
+                    con.Open();
+                    using (MySqlCommand cmd1 = new MySqlCommand())
+                    {
+                        cmd1.Connection = con;
+                        cmd1.CommandText = "SELECT COUNT(*) FROM tblCar WHERE CarStatus = 'Available'";
+                        availableCarCount = Convert.ToInt32(cmd1.ExecuteScalar());
+                        lblCarCount.Text = availableCarCount.ToString();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle the exception, e.g., log it or display an error message
+                    Console.WriteLine("Error: " + ex.Message);
+                }
             }
+
 
         }
 

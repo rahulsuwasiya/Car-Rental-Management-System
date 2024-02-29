@@ -71,7 +71,7 @@
                     <div class="card--header">
                         <div class="amount">
                             <span class="title">
-                                Total Cars</span>
+                                Available Cars</span>
                             <span class="amount--value">
                                 <asp:Literal Text="" ID="lblCarCount" runat="server" /></span>
                         </div>
