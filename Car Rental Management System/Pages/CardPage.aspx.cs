@@ -15,8 +15,7 @@ namespace Car_Rental_Management_System.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-         
-                // Use the selected label text as needed
+
             CarName.Text = Session["CarName"].ToString();
             CarCategory.Text = Session["CarCategory"].ToString();
             CarPrice.Text = Session["CarPrice"].ToString();
@@ -33,16 +32,10 @@ namespace Car_Rental_Management_System.Admin
                 BtnSignUp.Visible = false;
                 lblUser.Text = "Hii, " + Session["UserName"].ToString();
                 lblUser.Visible = true;
-
             }
-            else
-            {
-
-            }
-
+            
             if (!IsPostBack)
             {
-                // Set ValueToCompare property to today's date
                 CompareValidatorFromDate.ValueToCompare = DateTime.Now.ToShortDateString();
             }
         }
@@ -54,14 +47,8 @@ namespace Car_Rental_Management_System.Admin
 
         protected void BtnLogout_ServerClick(object sender, EventArgs e)
         {
-            // Clear any existing authentication cookies if applicable
-            FormsAuthentication.SignOut();
-
-            // Expire the session cookie on the client side
-            Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", "") { Expires = DateTime.Now.AddYears(-1) });
-
-            // Redirect to the login page or another destination
-            Response.Redirect("../Pages/LoginPage.aspx"); Session.Abandon();
+            Session.Abandon();
+            Response.Redirect("../Pages/LoginPage.aspx"); 
         }
 
         protected void BtnLogin_ServerClick(object sender, EventArgs e)
@@ -75,7 +62,6 @@ namespace Car_Rental_Management_System.Admin
             DateTime Tdate = DateTime.Parse(txtTdate.Text);
            
             TimeSpan difference = Tdate - Fdate;
-
             int Days = difference.Days;
 
             string carPriceString = Session["CarPrice"].ToString();

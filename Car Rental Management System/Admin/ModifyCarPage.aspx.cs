@@ -26,7 +26,6 @@ namespace Car_Rental_Management_System.Admin
                     {
                         cmd.Connection = con;
                         con.Open();
-
                         // Fetch car details based on CarID
                         cmd.CommandText = "SELECT * FROM tblCar WHERE C_Id = @CarId";
                         cmd.Parameters.AddWithValue("@CarId", Convert.ToInt32(txtCarId.Text));
@@ -43,11 +42,9 @@ namespace Car_Rental_Management_System.Admin
                                 txtPricePerDay.Text = reader["PricePerDay"].ToString();
                                 txtCarInfo.Text = reader["CarInfo"].ToString();
                                 txtCarStatus.Text = reader["CarStatus"].ToString();
-                                // Additional fields can be populated here
                             }
                             else
                             {
-                                // Handle if car with given ID is not found
                                 Response.Write("<script>alert('Car with this ID does not exist.');</script>");
                             }
                         }
@@ -55,13 +52,9 @@ namespace Car_Rental_Management_System.Admin
                 }
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
-            {
-                // Handle database errors
+            { 
                 string errorMessage = "An error occurred while fetching car details: " + ex.Message;
-                // Log or display the error message for debugging purposes
                 Response.Write("<script>alert('" + errorMessage + "');</script>");
-                // Optionally, you can also log the full exception details including stack trace
-                // LogException(ex);
             }
         }
 
@@ -88,11 +81,9 @@ namespace Car_Rental_Management_System.Admin
                         }
                         else
                         {
-                            // Handle if no new image is uploaded
                             cmd.CommandText = "UPDATE tblCar SET CarName = @CarName, CarCategory = @CarCategory, CarCapacity = @CarCapacity, CarKmpL = @CarKmpL, PricePerDay = @PricePerDay, CarInfo = @CarInfo, CarStatus = @CarStatus WHERE C_ID = @CarID";
                         }
 
-                        // Add other parameters for car details update
                         cmd.Parameters.AddWithValue("@CarID", txtCarId.Text);
                         cmd.Parameters.AddWithValue("@CarName", txtCarName.Text);
                         cmd.Parameters.AddWithValue("@CarCategory", txtCarCategory.Text);
@@ -100,7 +91,7 @@ namespace Car_Rental_Management_System.Admin
                         cmd.Parameters.AddWithValue("@CarKmpL", txtCarKmpL.Text);
                         cmd.Parameters.AddWithValue("@PricePerDay", txtPricePerDay.Text);
                         cmd.Parameters.AddWithValue("@CarInfo", txtCarInfo.Text);
-                        cmd.Parameters.AddWithValue("@CarStatus", txtCarStatus.Text); // Assuming txtCarStatus is a TextBox control
+                        cmd.Parameters.AddWithValue("@CarStatus", txtCarStatus.Text); 
 
                         int rowsAffected = cmd.ExecuteNonQuery();
 
@@ -123,7 +114,5 @@ namespace Car_Rental_Management_System.Admin
                 Response.Write("<script>alert('An error occurred while updating car details: " + ex.Message + "');</script>");
             }
         }
-
-
     }
 }

@@ -20,29 +20,20 @@ namespace Car_Rental_Management_System.Admin
         {
 
             if (Session["UserName"] != null)
-            {
-                
+            {  
                 lblAdmin.Text = "Welcome, " + Session["UserName"].ToString();
-               
-
             }
-            else
-            {
-
-            }
+           
             int totalEntries=0;
             string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
             MySqlConnection connection = new MySqlConnection(connectionString);
             if (!IsPostBack)
             {
-                
                 DataTable dt = new DataTable();
                 string query = "SELECT * FROM tblBooking";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
-                // Fill DataTable with data from the database
                 adapter.Fill(dt);
                 totalEntries = dt.Rows.Count;
-                // Bind DataTable to GridView
                 GridView1.DataSource = dt;
                 GridView1.DataBind();
             }
@@ -56,7 +47,6 @@ namespace Car_Rental_Management_System.Admin
             int totalCount;
             if (result != null && int.TryParse(result.ToString(), out totalCount))
             {
-                // Output the total count of entries
                 lblCustomers.Text = totalCount.ToString();
             }
             string q1 = "SELECT SUM(TotalAmt) FROM tblBooking";
@@ -67,10 +57,8 @@ namespace Car_Rental_Management_System.Admin
             int totalTransaction;
             if (result1 != null && int.TryParse(result1.ToString(), out totalTransaction))
             {
-                // Output the total count of entries
                 lblTransaction.Text = totalTransaction.ToString();
             }
-
 
             int availableCarCount = 0;
             using (MySqlConnection con = new MySqlConnection(connectionString))
@@ -88,21 +76,16 @@ namespace Car_Rental_Management_System.Admin
                 }
                 catch (Exception ex)
                 {
-                    // Handle the exception, e.g., log it or display an error message
                     Console.WriteLine("Error: " + ex.Message);
                 }
             }
-
-
         }
 
         protected void Unnamed_ServerClick(object sender, EventArgs e)
         {
-            // Destroy the session
             Session.Abandon();
-
-            // Redirect to the logout page or any other page after session destruction
             Response.Redirect("../Admin/AdminLogin.aspx");
         }
+
     }
 }

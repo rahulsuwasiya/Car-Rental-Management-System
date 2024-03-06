@@ -18,8 +18,6 @@ namespace Car_Rental_Management_System.Payment
 
         MySqlConnection con;
         MySqlCommand cmd;
-
-        
         protected void Page_Load(object sender, EventArgs e)
         {
             lblTotalAmt.Text=Session["TotalAmt"].ToString();
@@ -33,9 +31,7 @@ namespace Car_Rental_Management_System.Payment
             
             
             string BookingDate = DateTime.Today.ToString("dd-MM-yyyy");
-
             int PricePerDay =Convert.ToInt32(Session["CarPrice"].ToString());
-
             int TotalAmt = Convert.ToInt32(Session["TotalAmt"].ToString());
             string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
             con = new MySqlConnection(connectionString);
@@ -64,7 +60,6 @@ namespace Car_Rental_Management_System.Payment
             cmd.Parameters.AddWithValue("@CarName", CarName);
             cmd.ExecuteNonQuery();
                 
-
             Response.Redirect("../Payment/SuccessPage.aspx");
         }
     }

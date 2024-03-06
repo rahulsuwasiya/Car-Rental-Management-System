@@ -16,14 +16,9 @@ namespace Car_Rental_Management_System.Admin
         {
             if (Session["UserName"] != null)
             {
-
                 lblAdmin.Text = "Welcome, " + Session["UserName"].ToString();
-
             }
-            else
-            {
-
-            }
+           
             if (!IsPostBack)
             {
                 string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
@@ -31,21 +26,15 @@ namespace Car_Rental_Management_System.Admin
                 DataTable dt = new DataTable();
                 string query = "SELECT * FROM tblBooking";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
-                // Fill DataTable with data from the database
                 adapter.Fill(dt);
-
-                // Bind DataTable to GridView
                 GridView1.DataSource = dt;
                 GridView1.DataBind();
             }
         }
 
         protected void Unnamed_ServerClick(object sender, EventArgs e)
-        {
-            // Destroy the session
+        {      
             Session.Abandon();
-
-            // Redirect to the logout page or any other page after session destruction
             Response.Redirect("../Admin/AdminLogin.aspx");
         }
     }

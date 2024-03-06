@@ -29,13 +29,11 @@ namespace Car_Rental_Management_System.Admin
                 cmd = new MySqlCommand();
                 con.Open();
                 cmd.Connection = con;
-
                 // Check if a file is uploaded
                 if (CarImageUpload.HasFile)
                 {
                     // Read the file content
                     byte[] fileData = CarImageUpload.FileBytes;
-
                     // Add the file data to the database
                     cmd.CommandText = "INSERT INTO tblCar (CarName, CarCategory,CarCapacity,CarKmpL, PricePerDay, CarInfo, CarImage,CarStatus) VALUES (@CarName, @CarCategory,@CarCapacity,@CarKmpL, @PricePerDay, @CarInfo, @CarImage,@CarStatus)";
                     cmd.Parameters.AddWithValue("@CarImage", fileData);
@@ -60,7 +58,6 @@ namespace Car_Rental_Management_System.Admin
                 {
                     // Insert successful
                     Response.Write("<script>alert('Car Added Successfully..');window.location = 'CarSectionPage.aspx';</script>");
-
                 }
                 else
                 {
@@ -73,7 +70,6 @@ namespace Car_Rental_Management_System.Admin
                 // Check if the exception is due to a primary key violation
                 if (ex.Number == 1062)  // SQL Server error number for primary key violation
                 {
-                   
                     Response.Write("<script>alert('Car with this ID already exists. Please choose a different ID.');window.location = 'AddCarPage.aspx';</script>");
                 }
                 

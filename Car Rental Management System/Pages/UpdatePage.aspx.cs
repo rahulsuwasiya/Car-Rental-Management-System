@@ -26,40 +26,25 @@ namespace Car_Rental_Management_System.Pages
                 BtnSignUp.Visible = false;
                 lblUser.Text = "Hii, " + Session["UserName"].ToString();
                 lblUser.Visible = true;
-
             }
-            else
-            {
-
-            }
+            
         }
 
         protected void BtnLogin_ServerClick(object sender, EventArgs e)
         {
             Response.Redirect("../Pages/LoginPage.aspx");
         }
-
         protected void BtnLogout_ServerClick(object sender, EventArgs e)
         {
             Session.Abandon();
-
-            // Clear any existing authentication cookies if applicable
-            FormsAuthentication.SignOut();
-
-            // Expire the session cookie on the client side
-            Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", "") { Expires = DateTime.Now.AddYears(-1) });
-
-            // Redirect to the login page or another destination
-            Response.Redirect("../Pages/LoginPage.aspx"); Session.Abandon();
+            Response.Redirect("../Pages/LoginPage.aspx"); 
         }
 
         protected void BtnSignUp_ServerClick(object sender, EventArgs e)
         {
             Response.Redirect("../Pages/RegisterPage.aspx");
         }
-
-       
-           
+  
         protected void BtnSubscribe_ServerClick(object sender, EventArgs e)
         {
             try
@@ -82,6 +67,4 @@ namespace Car_Rental_Management_System.Pages
             con.Close();
         }
     }
-            
-        
-    }
+}

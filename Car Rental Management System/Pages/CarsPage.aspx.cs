@@ -17,8 +17,6 @@ namespace Car_Rental_Management_System.Pages
         MySqlConnection con;
         MySqlCommand cmd;
         MySqlDataReader dr;
-        
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["UserName"] != null)
@@ -28,13 +26,8 @@ namespace Car_Rental_Management_System.Pages
                 BtnSignUp.Visible = false;
                 lblUser.Text= "Hii, "+Session["UserName"].ToString();
                 lblUser.Visible = true;
-                
-
             }
-            else
-            {
-
-            }
+           
 
             if(!IsPostBack)
             {
@@ -74,7 +67,6 @@ namespace Car_Rental_Management_System.Pages
                 {
                     conditions.Add("CarCapacity>=6");
                 }
-                // Add more if needed for other categories
 
                 // Combine the conditions with OR
                 if (conditions.Any())
@@ -101,17 +93,8 @@ namespace Car_Rental_Management_System.Pages
 
         protected void BtnLogout_ServerClick(object sender, EventArgs e)
         {
-
             Session.Abandon();
-
-            // Clear any existing authentication cookies if applicable
-            FormsAuthentication.SignOut();
-
-            // Expire the session cookie on the client side
-            Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", "") { Expires = DateTime.Now.AddYears(-1) });
-
-            // Redirect to the login page or another destination
-            Response.Redirect("../Pages/LoginPage.aspx"); Session.Abandon();
+            Response.Redirect("../Pages/LoginPage.aspx");
         }
 
         protected void BtnSignUp_ServerClick(object sender, EventArgs e)
@@ -119,13 +102,8 @@ namespace Car_Rental_Management_System.Pages
             Response.Redirect("../Pages/RegisterPage.aspx");
         }
 
-
-
-
-
         protected void BtnRent_Click(object sender, EventArgs e)
         {
-
             if (Session["UserName"] != null)
             {
                 Button btn = (Button)sender;
@@ -166,15 +144,11 @@ namespace Car_Rental_Management_System.Pages
                 con.Close();
 
                 Response.Redirect("../Pages/CardPage.aspx");
-
-
-
             }
             else
             {
                 Response.Redirect("../Pages/LoginPage.aspx");
             }
         }
-
     }
 }
